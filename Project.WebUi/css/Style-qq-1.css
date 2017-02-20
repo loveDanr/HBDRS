@@ -1,0 +1,93 @@
+﻿/*顶端Log*/
+.topLogo{
+    background:#444359  url(../images/logo.png) no-repeat left top ;
+    vertical-align:top;
+}
+/*左侧菜单区域*/
+.left_menu{
+background: #FFF;
+}
+/*一级菜单-START*/
+.ti {
+     cursor: pointer;
+	display: block;
+	padding: 10px 15px 10px 30px;
+	color: #333;
+    font-family: "Microsoft Yahei";
+	font-size: 14px;
+	font-weight: 700;
+    line-height: 30px;
+	border-bottom: 1px solid #CCC;
+    border-right:1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+     background:none;
+}
+
+/*菜单顶端*/
+.navgn {
+    padding-left:18px;
+    height:30px;
+    line-height:29px;
+    border-bottom: 2px solid #CCC;
+    border-top:1px solid #CCC;
+   letter-spacing:2px;
+	font-size: 14px;
+    font-weight: 700;
+    background:url(/images/icon.png) left center no-repeat;
+}
+/*一级菜单展开*/
+.current{
+
+     background-color:#e7e5e9;
+
+}
+.left_menu div.ti a{
+
+color:#333;
+font-family:Microsoft Yahei;
+ z-index: 7674;
+ text-decoration: none;
+}
+.left_menu div.ti:hover {
+  
+    background-color:#e7e5e9;
+}
+  .left_menu div.ti:hover a {
+        color: #333;
+    }
+.left_menu div.ti a:hover{
+
+text-decoration:none;
+}
+/*一级菜单-END*/
+
+/*二级菜单-START*/
+.left_menu ul{
+     display: none;
+ 	background-color: none;
+	line-height: 38px;
+    color:#333;
+}
+.left_menu li{
+/*border-bottom: 1px solid #CCC;*/
+}
+.lfmenuA {display:block;height:38px;font-family:Microsoft Yahei;font-weight:700;line-height:38px;padding-left:30px;color: #333;text-decoration:none;-webkit-transition: all 0.25s ease;-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;}
+.lfmenuA:visited {
+    color:#333;
+}
+.lfmenuA:hover{
+    background: #b63b4d;
+ 	color: #FFF;
+	text-decoration:none;}
+.acurrent{
+    background-color:#b63b4d;
+	color:#FFF;
+}
+ .acurrent:visited {
+        color: #FFF;
+    }
+ /*二级菜单-END*/

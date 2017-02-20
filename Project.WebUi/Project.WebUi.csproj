@@ -1,0 +1,2047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5362D95C-2C94-4216-B0AD-CCCD77D6BCC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.WebUi</RootNamespace>
+    <AssemblyName>Project.WebUi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\GRK\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\GRK\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\GRK\bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\GRK\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\GRK\bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdverseEvent\ChartHL.aspx" />
+    <Content Include="AdverseEvent\ChartQT.aspx" />
+    <Content Include="AdverseEvent\ChartSX.aspx" />
+    <Content Include="AdverseEvent\ChartXZHQ.aspx" />
+    <Content Include="AdverseEvent\ChartYLYJ.aspx" />
+    <Content Include="AdverseEvent\ChartYS.aspx" />
+    <Content Include="AdverseEvent\ChartZA.aspx" />
+    <Content Include="AdverseEvent\ChartZYBL.aspx" />
+    <Content Include="AdverseEvent\SXBLFY.aspx" />
+    <Content Include="AdverseEvent\EditHLDDZC.aspx" />
+    <Content Include="AdverseEvent\EditHLGLHT.aspx" />
+    <Content Include="AdverseEvent\EditHLQT.aspx" />
+    <Content Include="AdverseEvent\EditHLSYFY.aspx" />
+    <Content Include="AdverseEvent\EditHLYC.aspx" />
+    <Content Include="AdverseEvent\EditSXSJ.aspx" />
+    <Content Include="AdverseEvent\EditYLFS.aspx" />
+    <Content Include="AdverseEvent\EditYLYJ.aspx" />
+    <Content Include="AdverseEvent\EditYPBLFY.aspx" />
+    <Content Include="AdverseEvent\EditYPZL.aspx" />
+    <Content Include="AdverseEvent\EditYYCW.aspx" />
+    <Content Include="AdverseEvent\EditZYBL.aspx" />
+    <Content Include="AdverseEvent\HLDDZC.aspx" />
+    <Content Include="AdverseEvent\HLGLHT.aspx" />
+    <Content Include="AdverseEvent\HLQTBLSJ.aspx" />
+    <Content Include="AdverseEvent\HLSYFY.aspx" />
+    <Content Include="AdverseEvent\HLYC.aspx" />
+    <Content Include="AdverseEvent\KYYLQX.aspx" />
+    <Content Include="AdverseEvent\Nationality.XML" />
+    <Content Include="AdverseEvent\PivotGridDept.aspx" />
+    <Content Include="AdverseEvent\PrintKYYLQX.aspx" />
+    <Content Include="AdverseEvent\QTBLSJ.aspx" />
+    <Content Include="AdverseEvent\QueryEvents.aspx" />
+    <Content Include="AdverseEvent\QueryHLSJ.aspx" />
+    <Content Include="AdverseEvent\QueryKYYLQX.aspx" />
+    <Content Include="AdverseEvent\QueryQTSJ.aspx" />
+    <Content Include="AdverseEvent\QuerySXSJ.aspx" />
+    <Content Include="AdverseEvent\QueryXZSJ.aspx" />
+    <Content Include="AdverseEvent\QueryYLYJSJ.aspx" />
+    <Content Include="AdverseEvent\QueryYXSJ.aspx" />
+    <Content Include="AdverseEvent\QueryZASJ.aspx" />
+    <Content Include="AdverseEvent\QueryZYBL.aspx" />
+    <Content Include="AdverseEvent\ReportEvent.aspx" />
+    <Content Include="AdverseEvent\SharedEdit.aspx" />
+    <Content Include="AdverseEvent\SharedQuery.aspx" />
+    <Content Include="AdverseEvent\StatisticsEvent.aspx" />
+    <Content Include="AdverseEvent\FSAQSJ.aspx" />
+    <Content Include="AdverseEvent\XZBLSJ.aspx" />
+    <Content Include="AdverseEvent\YJBLSJ.aspx" />
+    <Content Include="AdverseEvent\YLBLSJ.aspx" />
+    <Content Include="AdverseEvent\YPBLFYSJ.aspx" />
+    <Content Include="AdverseEvent\YPZLSJ.aspx" />
+    <Content Include="AdverseEvent\YWRYZYBL.aspx" />
+    <Content Include="AdverseEvent\YWRYZYBLN.aspx" />
+    <Content Include="AdverseEvent\YYCWSJ.aspx" />
+    <Content Include="AdverseEvent\ZABLSJ.aspx" />
+    <Content Include="App_Themes\SoftOrange\ASPxBinaryImage.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxButton.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCalendar.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCallbackPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCardView.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCheckBoxList.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxCloudControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxComboBox.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDataView.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDateNavigator.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDockPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDocumentViewer.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxFileManager.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxFormLayout.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxGridView.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxHeadline.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxHtmlEditor.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxImage.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxImageGallery.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxImageSlider.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxImageZoom.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxImageZoomNavigator.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxLabel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxListBox.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxLoadingPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxMemo.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxMenu.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxNavBar.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxNewsControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPageControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPager.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPivotGrid.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPopupControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxPopupMenu.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRatingControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRibbon.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRichEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxRoundPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxScheduler.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxSiteMapControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxSpellChecker.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxSplitter.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxSpreadsheet.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTabControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTextBox.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTitleIndex.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTokenBox.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTrackBar.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTreeList.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxTreeView.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxUploadControl.skin" />
+    <Content Include="App_Themes\SoftOrange\ASPxValidationSummary.skin" />
+    <Content Include="App_Themes\SoftOrange\CardView\cvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\SoftOrange\CardView\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\CardView\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\CardView\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Chart\Loading.gif" />
+    <Content Include="App_Themes\SoftOrange\Chart\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonCheckedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonEditButtonBackDis.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarFootBtn.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarFootBtnH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarFootBtnP.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtCalendarHeader.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTokenBoxTokenBackground.png" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\fcElbow.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\fcLine.gif" />
+    <Content Include="App_Themes\SoftOrange\Editors\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\Editors\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\Editors\styles.css" />
+    <Content Include="App_Themes\SoftOrange\GridView\gvGroupPanelBackground.gif" />
+    <Content Include="App_Themes\SoftOrange\GridView\gvGroupRowBack.gif" />
+    <Content Include="App_Themes\SoftOrange\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\SoftOrange\GridView\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\GridView\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\GridView\styles.css" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheAudio.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheFlash.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheFoldMarker.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheNotSupported.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheVideo.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\dxheYoutube.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\heFoldGutterFolded.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\heFoldGutterOpen.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\HtmlEditor\styles.css" />
+    <Content Include="App_Themes\SoftOrange\MonthEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\Parameters.config" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\pcFooterBack.gif" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\pcHeaderBack.gif" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\pgAreaBackground.gif" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\pgSortDownButton.gif" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\pgSortUpButton.gif" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\styles.css" />
+    <Content Include="App_Themes\SoftOrange\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\SoftOrange\RecurrenceTypeEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\ReportDocumentMap.skin" />
+    <Content Include="App_Themes\SoftOrange\ReportParametersPanel.skin" />
+    <Content Include="App_Themes\SoftOrange\ReportToolbar.skin" />
+    <Content Include="App_Themes\SoftOrange\ReportViewer.skin" />
+    <Content Include="App_Themes\SoftOrange\RichEdit\reLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\SoftOrange\RichEdit\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\RichEdit\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\RichEdit\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\AdaBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\HeaderAltBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\HeaderBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\mItemChecked.png" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\NavigationButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ResHeaderBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ToolbarBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ViewSelectorButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ViewSelectorButtonCheckedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ViewSelectorButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\CssImages\ViewSelectorButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\Scheduler\styles.css" />
+    <Content Include="App_Themes\SoftOrange\SpellChecker\scErrorUnderline.gif" />
+    <Content Include="App_Themes\SoftOrange\SpellChecker\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Spreadsheet\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\Spreadsheet\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\Spreadsheet\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Spreadsheet\TouchResize.png" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineFirst.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineFirstRtl.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineLast.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineLastRtl.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineMiddle.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineMiddleRtl.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\CssImages\TreeLineRoot.gif" />
+    <Content Include="App_Themes\SoftOrange\TreeList\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\TreeList\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\TreeList\styles.css" />
+    <Content Include="App_Themes\SoftOrange\WebChartControl.skin" />
+    <Content Include="App_Themes\SoftOrange\Web\dvPagerPanelBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\edtButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\edtButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\fmFileCheck.png" />
+    <Content Include="App_Themes\SoftOrange\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\igLoading.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\igNavBtnsBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\isLoading.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\Loading.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\mItemBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\mItemBackH.png" />
+    <Content Include="App_Themes\SoftOrange\Web\mItemBackS.png" />
+    <Content Include="App_Themes\SoftOrange\Web\mLargeSeparatorBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\mScrollHBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\mSeparatorBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\mVSeparatorBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\nbHeaderBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\nbHeaderHBack.png" />
+    <Content Include="App_Themes\SoftOrange\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pDropDownButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pDropDownButtonDisabledBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\pDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\rcMapImage.png" />
+    <Content Include="App_Themes\SoftOrange\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\Web\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\Web\styles.css" />
+    <Content Include="App_Themes\SoftOrange\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tvElbow.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tvElbowRtl.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tvLine.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\ucButtonBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\ucButtonDisabledBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\ucButtonHoverBack.gif" />
+    <Content Include="App_Themes\SoftOrange\Web\ucButtonPressedBack.gif" />
+    <Content Include="App_Themes\SoftOrange\WeekDaysEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\WeekOfMonthEdit.skin" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\pageBottomBorder.png" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\pageLeftBorder.png" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\pageRightBorder.png" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\pageTopBorder.png" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\sprite.css" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\sprite.png" />
+    <Content Include="App_Themes\SoftOrange\XtraReports\styles.css" />
+    <Content Include="css\AEstyle.css" />
+    <Content Include="css\buttonDEMO.html" />
+    <Content Include="css\style-blue.css" />
+    <Content Include="css\style-leftmenu.css" />
+    <Content Include="css\style-myd.css" />
+    <Content Include="css\style-qq.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\welcome-qq.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="GRKHJJC\HJWSSG.aspx" />
+    <Content Include="GRKHJJC\HJWSSGbgsh.aspx" />
+    <Content Include="GRKHJJC\HJWSSGReport.aspx" />
+    <Content Include="GRKHJJC\HJWSXCBZZ.html" />
+    <Content Include="GRKHJJC\HJWSXPrograms.aspx" />
+    <Content Include="GRKHJJC\JJCSJC.aspx" />
+    <Content Include="GRKHJJC\JJCSJCbgsh.aspx" />
+    <Content Include="GRKHJJC\JJCSJCReport.aspx" />
+    <Content Include="GRKHJJC\JPZXJJCSJC.aspx" />
+    <Content Include="GRKHJJC\MJQSG.aspx" />
+    <Content Include="GRKHJJC\MJQSGbgsh.aspx" />
+    <Content Include="GRKHJJC\MJQSGReport.aspx" />
+    <Content Include="GRKHJJC\NJXDSG.aspx" />
+    <Content Include="GRKHJJC\NJXDSGbgsh.aspx" />
+    <Content Include="GRKHJJC\NJXDSGReport.aspx" />
+    <Content Include="GRKHJJC\PFSG.aspx" />
+    <Content Include="GRKHJJC\PFSGbgsh.aspx" />
+    <Content Include="GRKHJJC\PFSGReport.aspx" />
+    <Content Include="GRKHJJC\ProgramsMaintain.aspx" />
+    <Content Include="GRKHJJC\ProgramsMiss.aspx" />
+    <Content Include="GRKHJJC\QJYPSG.aspx" />
+    <Content Include="GRKHJJC\QJYPSGbgsh.aspx" />
+    <Content Include="GRKHJJC\QJYPSGReport.aspx" />
+    <Content Include="GRKHJJC\QTJJCS.aspx" />
+    <Content Include="GRKHJJC\QTJJCSbgsh.aspx" />
+    <Content Include="GRKHJJC\QTJJCSReport.aspx" />
+    <Content Include="GRKHJJC\SHOUSG.aspx" />
+    <Content Include="GRKHJJC\SHOUSGbgsh.aspx" />
+    <Content Include="GRKHJJC\SHOUSGReport.aspx" />
+    <Content Include="GRKHJJC\TXSTXY.aspx" />
+    <Content Include="GRKHJJC\TXSTXYbgsh.aspx" />
+    <Content Include="GRKHJJC\TXSTXYReport.aspx" />
+    <Content Include="GRKHJJC\WTBMSG.aspx" />
+    <Content Include="GRKHJJC\WTBMSGbgsh.aspx" />
+    <Content Include="GRKHJJC\WTBMSGReport.aspx" />
+    <Content Include="GRKHJJC\XDMJSG.aspx" />
+    <Content Include="GRKHJJC\XDMJSGbgsh.aspx" />
+    <Content Include="GRKHJJC\XDMJSGReport.aspx" />
+    <Content Include="GRKHJJC\XDMJWP.aspx" />
+    <Content Include="GRKHJJC\XDMJWPbgsh.aspx" />
+    <Content Include="GRKHJJC\XDMJWPReport.aspx" />
+    <Content Include="GRKHJJC\YYZW.aspx" />
+    <Content Include="GRKHJJC\YYZWbgsh.aspx" />
+    <Content Include="GRKHJJC\YYZWReport.aspx" />
+    <Content Include="GRKHJJC\ZLQXSG.aspx" />
+    <Content Include="GRKHJJC\ZLQXSGbgsh.aspx" />
+    <Content Include="GRKHJJC\ZLQXSGReport.aspx" />
+    <Content Include="GZCX\index.aspx" />
+    <Content Include="GZCX\indexDept.aspx" />
+    <Content Include="GZCX\userids.txt" />
+    <Content Include="HLBQ\HLBQWH.aspx" />
+    <Content Include="HLZLREPORT\HLZLQuery.aspx" />
+    <Content Include="HLZLREPORT\HLZLQueryDept.aspx" />
+    <Content Include="HLZLREPORT\HLZLSB.aspx" />
+    <Content Include="images\arrow_drop_down.png" />
+    <Content Include="images\bird.png" />
+    <Content Include="images\buliang.png" />
+    <Content Include="images\butClose.gif" />
+    <Content Include="images\butOpen.gif" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\dd.ico" />
+    <Content Include="images\dd.png" />
+    <Content Include="images\del.png" />
+    <Content Include="images\fw.png" />
+    <Content Include="images\gallery.png" />
+    <Content Include="images\huanjing.png" />
+    <Content Include="images\keyD.png" />
+    <Content Include="images\keyU.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\Loginlogo.png" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\login_name_bg.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\myd.png" />
+    <Content Include="images\navi-blue.png" />
+    <Content Include="images\navi.png" />
+    <Content Include="images\nurse.png" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\pp.png" />
+    <Content Include="images\pro_down.png" />
+    <Content Include="images\pro_left.png" />
+    <Content Include="images\qixie.png" />
+    <Content Include="images\san.png" />
+    <Content Include="images\yaopin.png" />
+    <Content Include="images\yun0.png" />
+    <Content Include="images\yun1.png" />
+    <Content Include="images\yun2.png" />
+    <Content Include="JQGL\QJ_addDaysPage.aspx" />
+    <Content Include="JQGL\QJ_detailsPage.aspx" />
+    <Content Include="JQGL\QJ_Index.aspx" />
+    <Content Include="JQGL\QJ_Index_GR.aspx" />
+    <Content Include="JQGL\QJ_leavePage.aspx" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\lhgcore.min.js" />
+    <Content Include="js\lhgdialog.min.js" />
+    <Content Include="js\My97DatePicker\calendar.js" />
+    <Content Include="js\My97DatePicker\config.js" />
+    <Content Include="js\My97DatePicker\lang\en.js" />
+    <Content Include="js\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="js\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="js\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="js\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="js\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\default\img.gif" />
+    <Content Include="js\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="js\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="js\My97DatePicker\WdatePicker.js" />
+    <Content Include="js\skins\blue.css" />
+    <Content Include="js\skins\blue\blue_s.png" />
+    <Content Include="js\skins\blue\blue_s2.png" />
+    <Content Include="js\skins\blue\ie6\blue_titbtn.gif" />
+    <Content Include="js\skins\blue\ie6\ui_b.png" />
+    <Content Include="js\skins\blue\ie6\ui_l.png" />
+    <Content Include="js\skins\blue\ie6\ui_lb.png" />
+    <Content Include="js\skins\blue\ie6\ui_lt.png" />
+    <Content Include="js\skins\blue\ie6\ui_lt2.png" />
+    <Content Include="js\skins\blue\ie6\ui_r.png" />
+    <Content Include="js\skins\blue\ie6\ui_rb.png" />
+    <Content Include="js\skins\blue\ie6\ui_rt.png" />
+    <Content Include="js\skins\blue\ie6\ui_rt2.png" />
+    <Content Include="js\skins\blue\ie6\ui_t.png" />
+    <Content Include="js\skins\blue\ie6\ui_t2.png" />
+    <Content Include="js\skins\chrome.css" />
+    <Content Include="js\skins\default.css" />
+    <Content Include="js\skins\discuz.css" />
+    <Content Include="js\skins\iblack.css" />
+    <Content Include="js\skins\iblack\iblack_s.png" />
+    <Content Include="js\skins\iblack\iblack_s2.png" />
+    <Content Include="js\skins\iblack\ie6\ui_b.png" />
+    <Content Include="js\skins\iblack\ie6\ui_l.png" />
+    <Content Include="js\skins\iblack\ie6\ui_lb.png" />
+    <Content Include="js\skins\iblack\ie6\ui_lt.png" />
+    <Content Include="js\skins\iblack\ie6\ui_lt2.png" />
+    <Content Include="js\skins\iblack\ie6\ui_r.png" />
+    <Content Include="js\skins\iblack\ie6\ui_rb.png" />
+    <Content Include="js\skins\iblack\ie6\ui_rt.png" />
+    <Content Include="js\skins\iblack\ie6\ui_rt2.png" />
+    <Content Include="js\skins\iblack\ie6\ui_t.png" />
+    <Content Include="js\skins\iblack\ie6\ui_t2.png" />
+    <Content Include="js\skins\iblue.css" />
+    <Content Include="js\skins\iblue\iblue_s.png" />
+    <Content Include="js\skins\iblue\iblue_s2.png" />
+    <Content Include="js\skins\iblue\ie6\ui_b.png" />
+    <Content Include="js\skins\iblue\ie6\ui_l.png" />
+    <Content Include="js\skins\iblue\ie6\ui_lb.png" />
+    <Content Include="js\skins\iblue\ie6\ui_lt.png" />
+    <Content Include="js\skins\iblue\ie6\ui_lt2.png" />
+    <Content Include="js\skins\iblue\ie6\ui_r.png" />
+    <Content Include="js\skins\iblue\ie6\ui_rb.png" />
+    <Content Include="js\skins\iblue\ie6\ui_rt.png" />
+    <Content Include="js\skins\iblue\ie6\ui_rt2.png" />
+    <Content Include="js\skins\iblue\ie6\ui_t.png" />
+    <Content Include="js\skins\iblue\ie6\ui_t2.png" />
+    <Content Include="js\skins\icons\32X32\fail.png" />
+    <Content Include="js\skins\icons\32X32\hits.png" />
+    <Content Include="js\skins\icons\32X32\i.png" />
+    <Content Include="js\skins\icons\32X32\succ.png" />
+    <Content Include="js\skins\icons\alert.gif" />
+    <Content Include="js\skins\icons\confirm.gif" />
+    <Content Include="js\skins\icons\discuz_bg.gif" />
+    <Content Include="js\skins\icons\error.gif" />
+    <Content Include="js\skins\icons\face-sad.png" />
+    <Content Include="js\skins\icons\face-smile.png" />
+    <Content Include="js\skins\icons\gb_tip_layer.png" />
+    <Content Include="js\skins\icons\gb_tip_layer_ie6.png" />
+    <Content Include="js\skins\icons\lhgcore.gif" />
+    <Content Include="js\skins\icons\loading.gif" />
+    <Content Include="js\skins\icons\prompt.gif" />
+    <Content Include="js\skins\icons\success.gif" />
+    <Content Include="js\skins\icons\tips.gif" />
+    <Content Include="js\skins\idialog.css" />
+    <Content Include="js\skins\idialog\idialog_s.png" />
+    <Content Include="js\skins\idialog\idialog_s2.png" />
+    <Content Include="js\skins\idialog\ie6\ui_b.png" />
+    <Content Include="js\skins\idialog\ie6\ui_close.hover.png" />
+    <Content Include="js\skins\idialog\ie6\ui_close.png" />
+    <Content Include="js\skins\idialog\ie6\ui_l.png" />
+    <Content Include="js\skins\idialog\ie6\ui_lb.png" />
+    <Content Include="js\skins\idialog\ie6\ui_lt.png" />
+    <Content Include="js\skins\idialog\ie6\ui_r.png" />
+    <Content Include="js\skins\idialog\ie6\ui_rb.png" />
+    <Content Include="js\skins\idialog\ie6\ui_rt.png" />
+    <Content Include="js\skins\idialog\ie6\ui_t.png" />
+    <Content Include="js\skins\igreen.css" />
+    <Content Include="js\skins\igreen\ie6\ui_b.png" />
+    <Content Include="js\skins\igreen\ie6\ui_l.png" />
+    <Content Include="js\skins\igreen\ie6\ui_lb.png" />
+    <Content Include="js\skins\igreen\ie6\ui_lt.png" />
+    <Content Include="js\skins\igreen\ie6\ui_r.png" />
+    <Content Include="js\skins\igreen\ie6\ui_rb.png" />
+    <Content Include="js\skins\igreen\ie6\ui_rt.png" />
+    <Content Include="js\skins\igreen\ie6\ui_t.png" />
+    <Content Include="js\skins\igreen\igreen_s.png" />
+    <Content Include="js\skins\igreen\igreen_s2.png" />
+    <Content Include="js\skins\jtop.css" />
+    <Content Include="js\skins\mac.css" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="lib\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="MYDHS\Default.aspx" />
+    <Content Include="MYDHS\GridMYDHS.aspx" />
+    <Content Include="MYDHS\GridReport.aspx" />
+    <Content Include="MYDHS\ok.htm" />
+    <Content Include="MYDHS\YJHZ.aspx" />
+    <Content Include="MYDYS\GridMYDYS.aspx" />
+    <Content Include="MYDYS\index.aspx" />
+    <Content Include="MYDYS\ok.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="MZSSB\GZLrecord.aspx" />
+    <Content Include="MZSSB\QueryGZL.aspx" />
+    <Content Include="SystemManage\BzswbIndex.aspx" />
+    <Content Include="SystemManage\BzswbPrint.aspx" />
+    <Content Include="SystemManage\BzswbQuery.aspx" />
+    <Content Include="SystemManage\DEdit.aspx" />
+    <Content Include="SystemManage\DList.aspx" />
+    <Content Include="SystemManage\MenuEdit.aspx" />
+    <Content Include="SystemManage\MenuList.aspx" />
+    <Content Include="SystemManage\PermissionSet.aspx" />
+    <Content Include="SystemManage\PwdChange.aspx" />
+    <Content Include="SystemManage\RoleEdit.aspx" />
+    <Content Include="SystemManage\RoleList.aspx" />
+    <Content Include="SystemManage\UserEdit.aspx" />
+    <Content Include="SystemManage\UserList.aspx" />
+    <Content Include="UserExit.aspx" />
+    <Content Include="Vcode.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Welcome.aspx" />
+    <Content Include="welqq.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdverseEvent\ChartHL.aspx.cs">
+      <DependentUpon>ChartHL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartHL.aspx.designer.cs">
+      <DependentUpon>ChartHL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartQT.aspx.cs">
+      <DependentUpon>ChartQT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartQT.aspx.designer.cs">
+      <DependentUpon>ChartQT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartSX.aspx.cs">
+      <DependentUpon>ChartSX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartSX.aspx.designer.cs">
+      <DependentUpon>ChartSX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartXZHQ.aspx.cs">
+      <DependentUpon>ChartXZHQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartXZHQ.aspx.designer.cs">
+      <DependentUpon>ChartXZHQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartYLYJ.aspx.cs">
+      <DependentUpon>ChartYLYJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartYLYJ.aspx.designer.cs">
+      <DependentUpon>ChartYLYJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartYS.aspx.cs">
+      <DependentUpon>ChartYS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartYS.aspx.designer.cs">
+      <DependentUpon>ChartYS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartZA.aspx.cs">
+      <DependentUpon>ChartZA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartZA.aspx.designer.cs">
+      <DependentUpon>ChartZA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartZYBL.aspx.cs">
+      <DependentUpon>ChartZYBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ChartZYBL.aspx.designer.cs">
+      <DependentUpon>ChartZYBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\DataSetAE.cs">
+      <DependentUpon>DataSetAE.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\DataSetAE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\SXBLFY.aspx.cs">
+      <DependentUpon>SXBLFY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\SXBLFY.aspx.designer.cs">
+      <DependentUpon>SXBLFY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLDDZC.aspx.cs">
+      <DependentUpon>EditHLDDZC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLDDZC.aspx.designer.cs">
+      <DependentUpon>EditHLDDZC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLGLHT.aspx.cs">
+      <DependentUpon>EditHLGLHT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLGLHT.aspx.designer.cs">
+      <DependentUpon>EditHLGLHT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLQT.aspx.cs">
+      <DependentUpon>EditHLQT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLQT.aspx.designer.cs">
+      <DependentUpon>EditHLQT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLSYFY.aspx.cs">
+      <DependentUpon>EditHLSYFY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLSYFY.aspx.designer.cs">
+      <DependentUpon>EditHLSYFY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLYC.aspx.cs">
+      <DependentUpon>EditHLYC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditHLYC.aspx.designer.cs">
+      <DependentUpon>EditHLYC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditSXSJ.aspx.cs">
+      <DependentUpon>EditSXSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditSXSJ.aspx.designer.cs">
+      <DependentUpon>EditSXSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYLFS.aspx.cs">
+      <DependentUpon>EditYLFS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYLFS.aspx.designer.cs">
+      <DependentUpon>EditYLFS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYLYJ.aspx.cs">
+      <DependentUpon>EditYLYJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYLYJ.aspx.designer.cs">
+      <DependentUpon>EditYLYJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYPBLFY.aspx.cs">
+      <DependentUpon>EditYPBLFY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYPBLFY.aspx.designer.cs">
+      <DependentUpon>EditYPBLFY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYPZL.aspx.cs">
+      <DependentUpon>EditYPZL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYPZL.aspx.designer.cs">
+      <DependentUpon>EditYPZL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYYCW.aspx.cs">
+      <DependentUpon>EditYYCW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditYYCW.aspx.designer.cs">
+      <DependentUpon>EditYYCW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\EditZYBL.aspx.cs">
+      <DependentUpon>EditZYBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\EditZYBL.aspx.designer.cs">
+      <DependentUpon>EditZYBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\HLDDZC.aspx.cs">
+      <DependentUpon>HLDDZC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\HLDDZC.aspx.designer.cs">
+      <DependentUpon>HLDDZC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\HLGLHT.aspx.cs">
+      <DependentUpon>HLGLHT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\HLGLHT.aspx.designer.cs">
+      <DependentUpon>HLGLHT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\HLQTBLSJ.aspx.cs">
+      <DependentUpon>HLQTBLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\HLQTBLSJ.aspx.designer.cs">
+      <DependentUpon>HLQTBLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\HLSYFY.aspx.cs">
+      <DependentUpon>HLSYFY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\HLSYFY.aspx.designer.cs">
+      <DependentUpon>HLSYFY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\HLYC.aspx.cs">
+      <DependentUpon>HLYC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\HLYC.aspx.designer.cs">
+      <DependentUpon>HLYC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\KYYLQX.aspx.cs">
+      <DependentUpon>KYYLQX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\KYYLQX.aspx.designer.cs">
+      <DependentUpon>KYYLQX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\PivotGridDept.aspx.cs">
+      <DependentUpon>PivotGridDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\PivotGridDept.aspx.designer.cs">
+      <DependentUpon>PivotGridDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\PrintKYYLQX.aspx.cs">
+      <DependentUpon>PrintKYYLQX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\PrintKYYLQX.aspx.designer.cs">
+      <DependentUpon>PrintKYYLQX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QTBLSJ.aspx.cs">
+      <DependentUpon>QTBLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QTBLSJ.aspx.designer.cs">
+      <DependentUpon>QTBLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryEvents.aspx.cs">
+      <DependentUpon>QueryEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryEvents.aspx.designer.cs">
+      <DependentUpon>QueryEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryHLSJ.aspx.cs">
+      <DependentUpon>QueryHLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryHLSJ.aspx.designer.cs">
+      <DependentUpon>QueryHLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryKYYLQX.aspx.cs">
+      <DependentUpon>QueryKYYLQX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryKYYLQX.aspx.designer.cs">
+      <DependentUpon>QueryKYYLQX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryQTSJ.aspx.cs">
+      <DependentUpon>QueryQTSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryQTSJ.aspx.designer.cs">
+      <DependentUpon>QueryQTSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QuerySXSJ.aspx.cs">
+      <DependentUpon>QuerySXSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QuerySXSJ.aspx.designer.cs">
+      <DependentUpon>QuerySXSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryXZSJ.aspx.cs">
+      <DependentUpon>QueryXZSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryXZSJ.aspx.designer.cs">
+      <DependentUpon>QueryXZSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryYLYJSJ.aspx.cs">
+      <DependentUpon>QueryYLYJSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryYLYJSJ.aspx.designer.cs">
+      <DependentUpon>QueryYLYJSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryYXSJ.aspx.cs">
+      <DependentUpon>QueryYXSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryYXSJ.aspx.designer.cs">
+      <DependentUpon>QueryYXSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryZASJ.aspx.cs">
+      <DependentUpon>QueryZASJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryZASJ.aspx.designer.cs">
+      <DependentUpon>QueryZASJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryZYBL.aspx.cs">
+      <DependentUpon>QueryZYBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\QueryZYBL.aspx.designer.cs">
+      <DependentUpon>QueryZYBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ReportEvent.aspx.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ReportEvent.aspx.designer.cs">
+      <DependentUpon>ReportEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\SharedEdit.aspx.cs">
+      <DependentUpon>SharedEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\SharedEdit.aspx.designer.cs">
+      <DependentUpon>SharedEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\SharedQuery.aspx.cs">
+      <DependentUpon>SharedQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\SharedQuery.aspx.designer.cs">
+      <DependentUpon>SharedQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\StatisticsEvent.aspx.cs">
+      <DependentUpon>StatisticsEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\StatisticsEvent.aspx.designer.cs">
+      <DependentUpon>StatisticsEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReport2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReport2.Designer.cs">
+      <DependentUpon>XtraReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportSXBL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportSXBL.Designer.cs">
+      <DependentUpon>XtraReportSXBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYLYJ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYLYJ.Designer.cs">
+      <DependentUpon>XtraReportYLYJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLDDZC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLDDZC.Designer.cs">
+      <DependentUpon>XtraReportHLDDZC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLGLHT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLGLHT.Designer.cs">
+      <DependentUpon>XtraReportHLGLHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLQT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLQT.Designer.cs">
+      <DependentUpon>XtraReportHLQT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLSYFY.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLSYFY.Designer.cs">
+      <DependentUpon>XtraReportHLSYFY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLYC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportHLYC.Designer.cs">
+      <DependentUpon>XtraReportHLYC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPBLFY.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPBLFY.Designer.cs">
+      <DependentUpon>XtraReportYPBLFY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPSH.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPSH.Designer.cs">
+      <DependentUpon>XtraReportYPSH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPZL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYPZL.Designer.cs">
+      <DependentUpon>XtraReportYPZL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYYCW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportYYCW.Designer.cs">
+      <DependentUpon>XtraReportYYCW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportZYBL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportZYBL.Designer.cs">
+      <DependentUpon>XtraReportZYBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\FSAQSJ.aspx.cs">
+      <DependentUpon>FSAQSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\FSAQSJ.aspx.designer.cs">
+      <DependentUpon>FSAQSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportZYBLN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XtraReportZYBLN.Designer.cs">
+      <DependentUpon>XtraReportZYBLN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\XZBLSJ.aspx.cs">
+      <DependentUpon>XZBLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\XZBLSJ.aspx.designer.cs">
+      <DependentUpon>XZBLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YJBLSJ.aspx.cs">
+      <DependentUpon>YJBLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YJBLSJ.aspx.designer.cs">
+      <DependentUpon>YJBLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YLBLSJ.aspx.cs">
+      <DependentUpon>YLBLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YLBLSJ.aspx.designer.cs">
+      <DependentUpon>YLBLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YPBLFYSJ.aspx.cs">
+      <DependentUpon>YPBLFYSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YPBLFYSJ.aspx.designer.cs">
+      <DependentUpon>YPBLFYSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YPZLSJ.aspx.cs">
+      <DependentUpon>YPZLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YPZLSJ.aspx.designer.cs">
+      <DependentUpon>YPZLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YWRYZYBL.aspx.cs">
+      <DependentUpon>YWRYZYBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YWRYZYBL.aspx.designer.cs">
+      <DependentUpon>YWRYZYBL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YWRYZYBLN.aspx.cs">
+      <DependentUpon>YWRYZYBLN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YWRYZYBLN.aspx.designer.cs">
+      <DependentUpon>YWRYZYBLN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\YYCWSJ.aspx.cs">
+      <DependentUpon>YYCWSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\YYCWSJ.aspx.designer.cs">
+      <DependentUpon>YYCWSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEvent\ZABLSJ.aspx.cs">
+      <DependentUpon>ZABLSJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEvent\ZABLSJ.aspx.designer.cs">
+      <DependentUpon>ZABLSJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MyBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\DatabaseGRK.cs">
+      <DependentUpon>DatabaseGRK.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\DatabaseGRK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGRK.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSG.aspx.cs">
+      <DependentUpon>HJWSSG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSG.aspx.designer.cs">
+      <DependentUpon>HJWSSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSGbgsh.aspx.cs">
+      <DependentUpon>HJWSSGbgsh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSGbgsh.aspx.designer.cs">
+      <DependentUpon>HJWSSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSGReport.aspx.cs">
+      <DependentUpon>HJWSSGReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSSGReport.aspx.designer.cs">
+      <DependentUpon>HJWSSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSXPrograms.aspx.cs">
+      <DependentUpon>HJWSXPrograms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\HJWSXPrograms.aspx.designer.cs">
+      <DependentUpon>HJWSXPrograms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJC.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>JJCSJC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJC.aspx.designer.cs">
+      <DependentUpon>JJCSJC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJCbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>JJCSJCbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJCbgsh.aspx.designer.cs">
+      <DependentUpon>JJCSJCbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJCReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>JJCSJCReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JJCSJCReport.aspx.designer.cs">
+      <DependentUpon>JJCSJCReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\JPZXJJCSJC.aspx.cs">
+      <DependentUpon>JPZXJJCSJC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\JPZXJJCSJC.aspx.designer.cs">
+      <DependentUpon>JPZXJJCSJC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MJQSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSG.aspx.designer.cs">
+      <DependentUpon>MJQSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MJQSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSGbgsh.aspx.designer.cs">
+      <DependentUpon>MJQSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MJQSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\MJQSGReport.aspx.designer.cs">
+      <DependentUpon>MJQSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NJXDSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSG.aspx.designer.cs">
+      <DependentUpon>NJXDSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NJXDSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSGbgsh.aspx.designer.cs">
+      <DependentUpon>NJXDSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NJXDSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\NJXDSGReport.aspx.designer.cs">
+      <DependentUpon>NJXDSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PFSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSG.aspx.designer.cs">
+      <DependentUpon>PFSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PFSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSGbgsh.aspx.designer.cs">
+      <DependentUpon>PFSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PFSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\PFSGReport.aspx.designer.cs">
+      <DependentUpon>PFSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ProgramsMaintain.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProgramsMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ProgramsMaintain.aspx.designer.cs">
+      <DependentUpon>ProgramsMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ProgramsMiss.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProgramsMiss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ProgramsMiss.aspx.designer.cs">
+      <DependentUpon>ProgramsMiss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QJYPSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSG.aspx.designer.cs">
+      <DependentUpon>QJYPSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QJYPSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSGbgsh.aspx.designer.cs">
+      <DependentUpon>QJYPSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QJYPSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QJYPSGReport.aspx.designer.cs">
+      <DependentUpon>QJYPSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCS.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QTJJCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCS.aspx.designer.cs">
+      <DependentUpon>QTJJCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCSbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QTJJCSbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCSbgsh.aspx.designer.cs">
+      <DependentUpon>QTJJCSbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCSReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QTJJCSReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\QTJJCSReport.aspx.designer.cs">
+      <DependentUpon>QTJJCSReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SHOUSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSG.aspx.designer.cs">
+      <DependentUpon>SHOUSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SHOUSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSGbgsh.aspx.designer.cs">
+      <DependentUpon>SHOUSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SHOUSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\SHOUSGReport.aspx.designer.cs">
+      <DependentUpon>SHOUSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXY.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TXSTXY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXY.aspx.designer.cs">
+      <DependentUpon>TXSTXY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXYbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TXSTXYbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXYbgsh.aspx.designer.cs">
+      <DependentUpon>TXSTXYbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXYReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TXSTXYReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\TXSTXYReport.aspx.designer.cs">
+      <DependentUpon>TXSTXYReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WTBMSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSG.aspx.designer.cs">
+      <DependentUpon>WTBMSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WTBMSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSGbgsh.aspx.designer.cs">
+      <DependentUpon>WTBMSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WTBMSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\WTBMSGReport.aspx.designer.cs">
+      <DependentUpon>WTBMSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSG.aspx.designer.cs">
+      <DependentUpon>XDMJSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSGbgsh.aspx.designer.cs">
+      <DependentUpon>XDMJSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJSGReport.aspx.designer.cs">
+      <DependentUpon>XDMJSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWP.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJWP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWP.aspx.designer.cs">
+      <DependentUpon>XDMJWP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWPbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJWPbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWPbgsh.aspx.designer.cs">
+      <DependentUpon>XDMJWPbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWPReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>XDMJWPReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XDMJWPReport.aspx.designer.cs">
+      <DependentUpon>XDMJWPReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportHJWSSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportHJWSSG.Designer.cs">
+      <DependentUpon>XtraReportHJWSSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportJJCSJC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportJJCSJC.Designer.cs">
+      <DependentUpon>XtraReportJJCSJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportJYBGItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportJYBGItem.Designer.cs">
+      <DependentUpon>XtraReportJYBGItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportMJQSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportMJQSG.Designer.cs">
+      <DependentUpon>XtraReportMJQSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportNJXDSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportNJXDSG.Designer.cs">
+      <DependentUpon>XtraReportNJXDSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportPFSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportPFSG.Designer.cs">
+      <DependentUpon>XtraReportPFSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportQJYP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportQJYP.Designer.cs">
+      <DependentUpon>XtraReportQJYP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportQTJJCS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportQTJJCS.Designer.cs">
+      <DependentUpon>XtraReportQTJJCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportSHOUSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportSHOUSG.Designer.cs">
+      <DependentUpon>XtraReportSHOUSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportTXSTXY.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportTXSTXY.Designer.cs">
+      <DependentUpon>XtraReportTXSTXY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportWTBMSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportWTBMSG.Designer.cs">
+      <DependentUpon>XtraReportWTBMSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportXDMJSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportXDMJSG.Designer.cs">
+      <DependentUpon>XtraReportXDMJSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportXDMJWP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportXDMJWP.Designer.cs">
+      <DependentUpon>XtraReportXDMJWP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportYYZW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportYYZW.Designer.cs">
+      <DependentUpon>XtraReportYYZW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportZLQXSG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GRKHJJC\XtraReportZLQXSG.Designer.cs">
+      <DependentUpon>XtraReportZLQXSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZW.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>YYZW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZW.aspx.designer.cs">
+      <DependentUpon>YYZW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZWbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>YYZWbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZWbgsh.aspx.designer.cs">
+      <DependentUpon>YYZWbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZWReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>YYZWReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\YYZWReport.aspx.designer.cs">
+      <DependentUpon>YYZWReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSG.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZLQXSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSG.aspx.designer.cs">
+      <DependentUpon>ZLQXSG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSGbgsh.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZLQXSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSGbgsh.aspx.designer.cs">
+      <DependentUpon>ZLQXSGbgsh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSGReport.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ZLQXSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GRKHJJC\ZLQXSGReport.aspx.designer.cs">
+      <DependentUpon>ZLQXSGReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GZCX\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GZCX\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GZCX\indexDept.aspx.cs">
+      <DependentUpon>indexDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GZCX\indexDept.aspx.designer.cs">
+      <DependentUpon>indexDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HLBQ\HLBQWH.aspx.cs">
+      <DependentUpon>HLBQWH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HLBQ\HLBQWH.aspx.designer.cs">
+      <DependentUpon>HLBQWH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLQuery.aspx.cs">
+      <DependentUpon>HLZLQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLQuery.aspx.designer.cs">
+      <DependentUpon>HLZLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLQueryDept.aspx.cs">
+      <DependentUpon>HLZLQueryDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLQueryDept.aspx.designer.cs">
+      <DependentUpon>HLZLQueryDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLSB.aspx.cs">
+      <DependentUpon>HLZLSB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HLZLREPORT\HLZLSB.aspx.designer.cs">
+      <DependentUpon>HLZLSB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQGL\QJ_addDaysPage.aspx.cs">
+      <DependentUpon>QJ_addDaysPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQGL\QJ_addDaysPage.aspx.designer.cs">
+      <DependentUpon>QJ_addDaysPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQGL\QJ_detailsPage.aspx.cs">
+      <DependentUpon>QJ_detailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQGL\QJ_detailsPage.aspx.designer.cs">
+      <DependentUpon>QJ_detailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQGL\QJ_Index.aspx.cs">
+      <DependentUpon>QJ_Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQGL\QJ_Index.aspx.designer.cs">
+      <DependentUpon>QJ_Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQGL\QJ_Index_GR.aspx.cs">
+      <DependentUpon>QJ_Index_GR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQGL\QJ_Index_GR.aspx.designer.cs">
+      <DependentUpon>QJ_Index_GR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQGL\QJ_leavePage.aspx.cs">
+      <DependentUpon>QJ_leavePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQGL\QJ_leavePage.aspx.designer.cs">
+      <DependentUpon>QJ_leavePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\DataSetMYDHS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMYDHS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDHS\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\GridMYDHS.aspx.cs">
+      <DependentUpon>GridMYDHS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDHS\GridMYDHS.aspx.designer.cs">
+      <DependentUpon>GridMYDHS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\GridReport.aspx.cs">
+      <DependentUpon>GridReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDHS\GridReport.aspx.designer.cs">
+      <DependentUpon>GridReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\XtraReportNSS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MYDHS\XtraReportNSS.Designer.cs">
+      <DependentUpon>XtraReportNSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MYDHS\YJHZ.aspx.cs">
+      <DependentUpon>YJHZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDHS\YJHZ.aspx.designer.cs">
+      <DependentUpon>YJHZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDYS\DataSetMYDYS.cs">
+      <DependentUpon>DataSetMYDYS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MYDYS\DataSetMYDYS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMYDYS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MYDYS\GridMYDYS.aspx.cs">
+      <DependentUpon>GridMYDYS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDYS\GridMYDYS.aspx.designer.cs">
+      <DependentUpon>GridMYDYS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDYS\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MYDYS\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MYDYS\XtraReportMYDYS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MYDYS\XtraReportMYDYS.Designer.cs">
+      <DependentUpon>XtraReportMYDYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MZSSB\GZLrecord.aspx.cs">
+      <DependentUpon>GZLrecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZSSB\GZLrecord.aspx.designer.cs">
+      <DependentUpon>GZLrecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MZSSB\QueryGZL.aspx.cs">
+      <DependentUpon>QueryGZL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MZSSB\QueryGZL.aspx.designer.cs">
+      <DependentUpon>QueryGZL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\BzswbIndex.aspx.cs">
+      <DependentUpon>BzswbIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\BzswbIndex.aspx.designer.cs">
+      <DependentUpon>BzswbIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\BzswbPrint.aspx.cs">
+      <DependentUpon>BzswbPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\BzswbPrint.aspx.designer.cs">
+      <DependentUpon>BzswbPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\BzswbQuery.aspx.cs">
+      <DependentUpon>BzswbQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\BzswbQuery.aspx.designer.cs">
+      <DependentUpon>BzswbQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\DEdit.aspx.cs">
+      <DependentUpon>DEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\DEdit.aspx.designer.cs">
+      <DependentUpon>DEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\DList.aspx.cs">
+      <DependentUpon>DList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\DList.aspx.designer.cs">
+      <DependentUpon>DList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\MenuEdit.aspx.cs">
+      <DependentUpon>MenuEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MenuEdit.aspx.designer.cs">
+      <DependentUpon>MenuEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\PermissionSet.aspx.cs">
+      <DependentUpon>PermissionSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\PermissionSet.aspx.designer.cs">
+      <DependentUpon>PermissionSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\PwdChange.aspx.cs">
+      <DependentUpon>PwdChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\PwdChange.aspx.designer.cs">
+      <DependentUpon>PwdChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\RoleEdit.aspx.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\RoleEdit.aspx.designer.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserExit.aspx.cs">
+      <DependentUpon>UserExit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserExit.aspx.designer.cs">
+      <DependentUpon>UserExit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vcode.aspx.cs">
+      <DependentUpon>Vcode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vcode.aspx.designer.cs">
+      <DependentUpon>Vcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welqq.aspx.cs">
+      <DependentUpon>welqq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welqq.aspx.designer.cs">
+      <DependentUpon>welqq.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRKHJJC\DatabaseGRK.xsc">
+      <DependentUpon>DatabaseGRK.xsd</DependentUpon>
+    </Content>
+    <Content Include="AdverseEvent\DataSetAE.xsc">
+      <DependentUpon>DataSetAE.xsd</DependentUpon>
+    </Content>
+    <None Include="AdverseEvent\DataSetAE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AdverseEvent\DataSetAE.xss">
+      <DependentUpon>DataSetAE.xsd</DependentUpon>
+    </Content>
+    <None Include="GRKHJJC\DatabaseGRK.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGRK.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="GRKHJJC\DatabaseGRK.xss">
+      <DependentUpon>DatabaseGRK.xsd</DependentUpon>
+    </Content>
+    <None Include="js\My97DatePicker\skin\default\Thumbs.db" />
+    <None Include="js\My97DatePicker\skin\Thumbs.db" />
+    <None Include="js\My97DatePicker\skin\whyGreen\Thumbs.db" />
+    <None Include="js\skins\areo_blue\ie6\Thumbs.db" />
+    <None Include="js\skins\areo_blue\Thumbs.db" />
+    <None Include="js\skins\areo_gray\ie6\Thumbs.db" />
+    <None Include="js\skins\areo_gray\Thumbs.db" />
+    <None Include="js\skins\default\ie6\Thumbs.db" />
+    <None Include="js\skins\default\Thumbs.db" />
+    <None Include="js\skins\notitle\ie6\Thumbs.db" />
+    <None Include="js\skins\notitle\Thumbs.db" />
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MYDYS\DataSetMYDYS.xsc">
+      <DependentUpon>DataSetMYDYS.xsd</DependentUpon>
+    </Content>
+    <Content Include="MYDHS\DataSetMYDHS.xsc">
+      <DependentUpon>DataSetMYDHS.xsd</DependentUpon>
+    </Content>
+    <None Include="MYDHS\DataSetMYDHS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMYDHS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="MYDHS\DataSetMYDHS.xss">
+      <DependentUpon>DataSetMYDHS.xsd</DependentUpon>
+    </Content>
+    <None Include="MYDYS\DataSetMYDYS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMYDYS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="MYDYS\DataSetMYDYS.xss">
+      <DependentUpon>DataSetMYDYS.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\web.config.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Bll\Project.Bll.csproj">
+      <Project>{2A7C6F6C-5D43-4B01-BD71-6B4C2C938418}</Project>
+      <Name>Project.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.Common\Project.Common.csproj">
+      <Project>{f1abb114-85d6-4d39-b4cf-ecd1b896a756}</Project>
+      <Name>Project.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.Dal\Project.Dal.csproj">
+      <Project>{AF6A4BDC-2C1F-4F91-BCC3-87B85CC3A5F1}</Project>
+      <Name>Project.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.Model\Project.Model.csproj">
+      <Project>{CF6F615F-18A2-4AED-96C2-069E76094EE9}</Project>
+      <Name>Project.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="js\skins\chrome\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdverseEvent\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReport2.resx">
+      <DependentUpon>XtraReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportSXBL.resx">
+      <DependentUpon>XtraReportSXBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportYLYJ.resx">
+      <DependentUpon>XtraReportYLYJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportHLDDZC.resx">
+      <DependentUpon>XtraReportHLDDZC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportHLGLHT.resx">
+      <DependentUpon>XtraReportHLGLHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportHLQT.resx">
+      <DependentUpon>XtraReportHLQT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportHLSYFY.resx">
+      <DependentUpon>XtraReportHLSYFY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportHLYC.resx">
+      <DependentUpon>XtraReportHLYC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportYPBLFY.resx">
+      <DependentUpon>XtraReportYPBLFY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportYPSH.resx">
+      <DependentUpon>XtraReportYPSH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportYPZL.resx">
+      <DependentUpon>XtraReportYPZL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportYYCW.resx">
+      <DependentUpon>XtraReportYYCW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportZYBL.resx">
+      <DependentUpon>XtraReportZYBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdverseEvent\XtraReportZYBLN.resx">
+      <DependentUpon>XtraReportZYBLN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRKHJJC\XtraReportHJWSSG.resx">
+      <DependentUpon>XtraReportHJWSSG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRKHJJC\XtraReportJYBGItem.resx">
+      <DependentUpon>XtraReportJYBGItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MYDHS\XtraReportNSS.resx">
+      <DependentUpon>XtraReportNSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MYDYS\XtraReportMYDYS.resx">
+      <DependentUpon>XtraReportMYDYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4119</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,77 @@
+2017-02-19 07:42:41,134 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:16:23,147 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:17:42,441 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:18:57,664 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：DataBinding:“System.Data.DataRowView”不包含名为“QjDate”的属性。
+2017-02-19 08:19:31,986 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:21:21,333 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:25:11,634 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:29:54,924 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:32:22,606 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:38:17,077 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:39:20,209 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：DataBinding:“System.Data.DataRowView”不包含名为“UserName”的属性。
+2017-02-19 08:41:57,024 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:42:27,339 [8] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_deailsPage.aspx?pageindex=2错误信息：文件“/JQGL/QJ_deailsPage.aspx”不存在。
+2017-02-19 08:43:39,096 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:45:44,246 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/SystemManage/UserList.aspx错误信息：DataBinding:“System.Data.DataRowView”不包含名为“RoleId”的属性。
+2017-02-19 08:46:33,290 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:47:22,259 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/SystemManage/UserList.aspx错误信息：DataBinding:“System.Data.DataRowView”不包含名为“RoleId”的属性。
+2017-02-19 08:48:51,936 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:52:03,506 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:53:54,423 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:55:41,189 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:56:31,026 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:58:48,470 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 08:59:20,046 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_deailsPage.aspx?pageindex=2错误信息：文件“/JQGL/QJ_deailsPage.aspx”不存在。
+2017-02-19 09:00:46,003 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_deailsPage.aspx?pageindex=2错误信息：文件“/JQGL/QJ_deailsPage.aspx”不存在。
+2017-02-19 09:01:11,381 [8] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_deailsPage.aspx?pageindex=2错误信息：文件“/JQGL/QJ_deailsPage.aspx”不存在。
+2017-02-19 09:03:31,220 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:04:46,226 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:07:41,587 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:11:40,779 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:12:46,300 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:13:10,805 [8] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：列名 'UserId' 不明确。
+2017-02-19 09:14:07,571 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:14:44,460 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:16:34,903 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：列名 'UserId' 不明确。
+2017-02-19 09:16:44,006 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：无法绑定由多个部分组成的标识符 "a.UserId"。
+2017-02-19 09:17:18,861 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:17:41,842 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：无法绑定由多个部分组成的标识符 "t1.UserId"。
+2017-02-19 09:20:20,648 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:25:22,593 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:28:49,385 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:29:07,091 [8] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：无法绑定由多个部分组成的标识符 "t1.UserId"。
+2017-02-19 09:30:53,438 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:43:31,682 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:44:18,195 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:46:25,035 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:49:14,540 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:50:05,985 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 09:53:30,877 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:00:19,098 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:03:16,695 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:13:01,007 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:14:29,146 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:17:49,216 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:27:45,257 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:28:05,998 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：控件包含代码块(即 <% ... %>)，因此无法修改控件集合。
+2017-02-19 10:39:14,295 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:40:48,199 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:47:46,762 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 10:57:41,043 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:13:58,811 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:14:40,721 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:25:03,488 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:25:31,077 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:25:41,029 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：d:\C#DevelopProject\HMS_my\Project.WebUi\JQGL\QJ_Index.aspx(66): error CS0103: 当前上下文中不存在名称“GetColor”
+2017-02-19 11:26:05,473 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：d:\C#DevelopProject\HMS_my\Project.WebUi\JQGL\QJ_Index.aspx(66): error CS1002: 应输入 ;
+2017-02-19 11:28:37,751 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:30:25,486 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:32:07,898 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:33:40,094 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:35:00,681 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:37:44,305 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:42:26,521 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 11:52:40,531 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 12:11:58,928 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 12:14:44,244 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-19 17:20:29,822 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行

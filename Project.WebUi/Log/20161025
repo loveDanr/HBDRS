@@ -1,0 +1,113 @@
+2016-10-25 10:06:04,492 [8] ERROR Project.WebUi._Default [(null)] - 进入首页！
+2016-10-25 10:22:08,162 [25] ERROR Project.WebUi._Default [(null)] - 进入首页！
+2016-10-25 10:22:10,312 [25] ERROR Project.WebUi._Default [(null)] - 进入首页！
+2016-10-25 10:22:15,806 [32] ERROR Project.WebUi._Default [(null)] - 进入首页！
+2016-10-25 10:33:19,554 [54] ERROR Project.WebUi._Default [(null)] - 进入首页！
+2016-10-25 11:46:20,133 [9] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 11:47:35,370 [7] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 11:48:17,039 [6] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 11:48:30,260 [9] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 14:36:23,129 [21] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 15:21:13,104 [60] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 15:21:15,053 [43] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 17:25:58,566 [123] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 17:34:59,763 [126] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 17:35:21,983 [128] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:35:25,705 [123] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:35:35,008 [127] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:35:38,490 [126] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:35:42,425 [123] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:35:45,448 [128] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb
+2016-10-25 17:36:08,878 [127] ERROR Project.WebUi._Default [(null)] - System.Web.Security.FormsIdentity进入首页！
+2016-10-25 17:36:21,354 [127] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId int,@UserName varchar(50),@UserPwd varchar(50),@RoleId ' 需要参数 '@UserId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.Insert(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 79
+ClientConnectionId:b609c6a5-eac7-4cd4-b2e3-6790e849d6cb

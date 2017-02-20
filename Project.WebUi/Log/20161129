@@ -1,0 +1,2 @@
+2016-11-29 11:24:46,338 [16] ERROR System.Web.HttpServerUtility [(null)] - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2016-11-29 12:01:36,798 [21] ERROR System.Web.HttpServerUtility [(null)] - A field or property with name 'eOccurDeptName12' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.

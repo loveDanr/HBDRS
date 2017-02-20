@@ -1,0 +1,5 @@
+E:\HBDRS\Project.Model\bin\Release\Project.Model.dll
+E:\HBDRS\Project.Model\bin\Release\Project.Model.pdb
+E:\HBDRS\Project.Model\obj\Release\Project.Model.dll
+E:\HBDRS\Project.Model\obj\Release\Project.Model.pdb
+E:\HBDRS\Project.Model\obj\Release\Project.Model.csprojResolveAssemblyReference.cache

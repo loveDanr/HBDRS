@@ -1,0 +1,12 @@
+E:\HBDRS\Project.Bll\bin\Release\Project.Bll.dll
+E:\HBDRS\Project.Bll\bin\Release\Project.Bll.pdb
+E:\HBDRS\Project.Bll\bin\Release\Project.Common.dll
+E:\HBDRS\Project.Bll\bin\Release\Project.Dal.dll
+E:\HBDRS\Project.Bll\bin\Release\Project.Model.dll
+E:\HBDRS\Project.Bll\bin\Release\log4net.dll
+E:\HBDRS\Project.Bll\bin\Release\Project.Common.pdb
+E:\HBDRS\Project.Bll\bin\Release\Project.Dal.pdb
+E:\HBDRS\Project.Bll\bin\Release\Project.Model.pdb
+E:\HBDRS\Project.Bll\obj\Release\Project.Bll.csprojResolveAssemblyReference.cache
+E:\HBDRS\Project.Bll\obj\Release\Project.Bll.dll
+E:\HBDRS\Project.Bll\obj\Release\Project.Bll.pdb

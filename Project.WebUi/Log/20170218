@@ -1,0 +1,40 @@
+2017-02-18 08:52:45,193 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 09:33:54,956 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:15:35,636 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:38:32,799 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:41:06,080 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:42:56,471 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:44:03,289 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:45:39,324 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 19:47:24,301 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:00:18,588 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:01:49,432 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx?UserId=071111错误信息：参数化查询 '(@UserId varchar(6),@deptId varchar(3))select a.UserId,username,' 需要参数 '@deptId'，但未提供该参数。
+2017-02-18 20:04:12,729 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:05:49,413 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:09:49,614 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:11:02,544 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:13:53,498 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:15:07,382 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:16:12,810 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:19:31,906 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:21:06,458 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:24:16,335 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 20:24:51,064 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_addPage.aspx?UserId=071111错误信息：文件“/JQGL/QJ_addPage.aspx”不存在。
+2017-02-18 20:31:59,103 [15] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_addPage.aspx?UserId=071111错误信息：文件“/JQGL/QJ_addPage.aspx”不存在。
+2017-02-18 21:08:06,180 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:10:07,234 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:16:46,124 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:27:27,923 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:28:38,050 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:42:51,991 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:57:06,977 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:58:35,897 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 21:59:22,724 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：未将对象引用设置到对象的实例。
+2017-02-18 22:17:00,537 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 22:19:09,108 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：d:\C#DevelopProject\HMS_my\Project.WebUi\JQGL\QJ_Index.aspx(59): error CS1061: “ASP.jqgl_qj_index_aspx”不包含“rptList_ItemDataBound”的定义，并且找不到可接受类型为“ASP.jqgl_qj_index_aspx”的第一个参数的扩展方法“rptList_ItemDataBound”(是否缺少 using 指令或程序集引用?)
+2017-02-18 22:21:36,975 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 22:37:37,627 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 22:40:50,277 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_Index.aspx错误信息：d:\C#DevelopProject\HMS_my\Project.WebUi\JQGL\QJ_Index.aspx(64): error CS0103: 当前上下文中不存在名称“GetColor”
+2017-02-18 23:03:24,419 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 23:06:44,067 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-18 23:08:33,462 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行

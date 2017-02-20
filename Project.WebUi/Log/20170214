@@ -1,0 +1,259 @@
+2017-02-14 08:23:06,971 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:26:25,761 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:27:36,111 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:30:42,095 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:32:09,600 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:39:14,346 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:40:02,847 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:40:39,690 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 08:44:47,271 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:45:17,115 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 08:48:28,185 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:52:42,024 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:55:07,427 [8] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 08:55:15,613 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 08:57:30,133 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:58:52,474 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 08:59:13,335 [8] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 09:00:04,636 [8] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 09:02:02,667 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:02:29,579 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.FormatException: 将参数值从 String 转换到 DateTime 失败。 ---> System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value, IFormatProvider provider)
+   在 System.String.System.IConvertible.ToDateTime(IFormatProvider provider)
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   在 System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   在 System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters, Boolean includeReturnValue)
+   在 System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+2017-02-14 09:04:29,647 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:04:50,809 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 从字符串转换日期和/或时间时，转换失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+ClientConnectionId:22a79c5a-9817-489b-9d75-d9fdbb7cddcb
+Error Number:241,State:1,Class:16
+2017-02-14 09:11:32,713 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:13:21,926 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:16:57,636 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:20:15,880 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:20:39,045 [7] ERROR Project.Dal.QjDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 违反了 PRIMARY KEY 约束“PK_QJ_leave”。不能在对象“dbo.QJ_leave”中插入重复键。重复键值为 (071111)。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+ClientConnectionId:2a3eec8a-7702-4308-9d4f-a4d184aff558
+Error Number:2627,State:1,Class:14
+2017-02-14 09:26:36,928 [6] ERROR Project.Dal.QjDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 违反了 PRIMARY KEY 约束“PK_QJ_leave”。不能在对象“dbo.QJ_leave”中插入重复键。重复键值为 (071111)。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+ClientConnectionId:2a3eec8a-7702-4308-9d4f-a4d184aff558
+Error Number:2627,State:1,Class:14
+2017-02-14 09:29:07,869 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:29:24,295 [7] ERROR Project.Dal.QjDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserID varchar(6),@QjDate varchar(25),@QjDays varchar(100),@Re' 需要参数 '@ApproverId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 d:\Dev\HMS_my\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.QjDal.Insert(QJ model, SqlTransaction trans) 位置 d:\Dev\HMS_my\Project.Dal\QjDal.cs:行号 30
+ClientConnectionId:d47861ea-5110-49c9-8dd5-dd328703d69b
+Error Number:8178,State:1,Class:16
+2017-02-14 09:31:08,020 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:32:59,221 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:33:01,124 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/Login.aspx错误信息：C:\Users\ERIC\AppData\Local\Temp\Temporary ASP.NET Files\root\bf8b3a34\6c29d86f\App_Theme_SoftOrange.-fzzaz6m.0.vb : (0): error BC31007: 无法打开模块文件“C:\Users\ERIC\AppData\Local\Temp\Temporary ASP.NET Files\root\bf8b3a34\6c29d86f\App_Theme_SoftOrange.-fzzaz6m.0.vb”:系统找不到指定的文件。 
+2017-02-14 09:33:14,119 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:52:03,387 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 09:53:20,617 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/SystemManage/MenuEdit.aspx错误信息：输入字符串的格式不正确。
+2017-02-14 09:54:22,164 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：d:\Dev\HMS_my\Project.WebUi\JQGL\QJ_detailsPage.aspx(26): error CS1061: “ASP.jqgl_qj_detailspage_aspx”不包含“btnSearch_Click”的定义，并且找不到可接受类型为“ASP.jqgl_qj_detailspage_aspx”的第一个参数的扩展方法“btnSearch_Click”(是否缺少 using 指令或程序集引用?)
+2017-02-14 10:05:19,275 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 10:05:42,518 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:02:07,817 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:02:24,008 [8] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：d:\Dev\HMS_my\Project.WebUi\JQGL\QJ_detailsPage.aspx(43): error CS1026: 应输入 )
+2017-02-14 11:04:24,404 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:08:31,743 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:09:43,128 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:30:06,315 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:31:46,187 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:34:14,709 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 11:40:35,417 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 14:42:21,984 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 14:48:19,639 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 14:52:28,025 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 14:54:53,644 [7] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：“@UserName”附近有语法错误。
+2017-02-14 14:55:14,304 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：“@UserName”附近有语法错误。
+2017-02-14 14:56:09,714 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 14:59:00,700 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:02:27,639 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:04:20,117 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:04:39,670 [5] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：“@UserName”附近有语法错误。
+2017-02-14 15:05:23,397 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:17:59,137 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:20:28,676 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:24:08,337 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:24:10,308 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/Login.aspx错误信息：C:\Users\ERIC\AppData\Local\Temp\Temporary ASP.NET Files\root\bf8b3a34\6c29d86f\App_Theme_SoftOrange.09mjgiw7.0.vb : (0): error BC31007: 无法打开模块文件“C:\Users\ERIC\AppData\Local\Temp\Temporary ASP.NET Files\root\bf8b3a34\6c29d86f\App_Theme_SoftOrange.09mjgiw7.0.vb”:系统找不到指定的文件。 
+2017-02-14 15:24:19,504 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:33:31,389 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:35:10,243 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:36:12,017 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:38:50,767 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:40:20,990 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:44:01,356 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:46:06,855 [5] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：未将对象引用设置到对象的实例。
+2017-02-14 15:46:47,256 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:53:39,411 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-02-14 15:53:50,717 [9] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/JQGL/QJ_detailsPage.aspx错误信息：d:\Dev\HMS_my\Project.WebUi\JQGL\QJ_detailsPage.aspx(43): error CS1502: 与“Project.WebUi.JQGL.QJ_detailsPage.ConvertDateFormat(System.DateTime)”最匹配的重载方法具有一些无效参数
+2017-02-14 15:56:36,775 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行

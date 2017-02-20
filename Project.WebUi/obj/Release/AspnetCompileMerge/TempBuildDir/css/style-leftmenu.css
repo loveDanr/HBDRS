@@ -1,0 +1,126 @@
+﻿/*顶端Log*/
+.topLogo{
+    background:#444359  url(../images/logo.png) no-repeat left top ;
+    vertical-align:top;
+}
+/*左侧菜单区域*/
+.left_menu{
+background: #FFF;
+}
+/*一级菜单-START*/
+.ti {
+     cursor: pointer;
+	display: block;
+	padding: 15px 0px 15px 10px;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 1px solid gray;
+	position: relative;
+	/*height: 47px;
+	line-height: 47px;
+	padding-left: 38px;
+	font-size: 14px;
+	color: #4D4D4D;
+	cursor: pointer;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+	border-bottom: 1px solid #F1F1F1;
+	border-top: 1px solid #F1F1F1;
+	position: relative;
+	margin: 0px;
+	font-weight: bold;*/
+	background: #444359 url(/images/pp.png) center right no-repeat;
+    
+}
+/*一级菜单展开*/
+.current{
+     background:#22282e url(/images/pro_down1.png) center right no-repeat;
+}
+.left_menu div.ti a{
+color:#e0e0e0; 
+}
+.left_menu div.ti:hover{
+background-color:#b63b4d;
+text-decoration:none;
+}
+/*一级菜单-END*/
+
+/*菜单顶端*/
+.navgn {
+    text-align:center;
+    height:30px;
+    line-height:29px;
+    background:#b63b4d url(/images/navi.png) center center no-repeat;  /*#aeb9c2*/
+    border-bottom: 1px solid #CCC; /*border-bottom: 2px solid #CCC;*/
+    border-top:1px solid #CCC;
+    color: #aeb9c2;
+	font-size: 14px;
+    font-weight: 700;
+}
+
+/*二级菜单-START*/
+.left_menu ul{
+     display: none;
+ 	background-color: #22282e;
+	line-height: 38px;
+	/*border-left: 1px solid #e1e1e1;
+	background-color:aqua; 
+	border-right: 1px solid #e1e1e1;*/
+}
+.left_menu li{
+border-bottom: 1px solid #4b4a5e;
+}
+.lfmenuA {display:block;height:38px;line-height:38px;padding-left:18px;color: #09c;text-decoration:none;}
+.lfmenuA:visited {
+    color: #09c;
+}
+.lfmenuA:hover{
+    background: #42515f;
+ 	color: #FFF;
+	text-decoration:none;}
+.acurrent{
+    background-color:#09C;
+    color: #FFF;
+}
+.acurrent:visited{
+    color: #FFF;
+}
+/*二级菜单-END*/
+
+/*全局表格样式-START*/
+.msgtable
+{
+   border:1px solid #EDECFF;
+}
+.msgtable th{
+    padding:0.3em;
+	font-weight:700;
+    width:100%;
+	/*background:#F8F7FF;*/
+    background-color:#FFFFFF;
+	/*background:url(../images/table_th_bg.gif) repeat-x bottom;*/
+    border:1px solid #DEE3E6;
+}
+.msgtable td{
+   border-width: 1px;
+   padding: 8px;
+   border-style: solid;
+   border-color: #ada8b1;
+   text-align:left;
+   font-size:12px;
+}
+.msgtable tr:hover{
+    background-color:#DEE3E6;
+}
+/*全局表格样式-END*/
+
+/*护理质量上报、查询底端表格和Gridview*/
+.bottom {
+    margin:15px 5px 1px 5px; border:4px Solid #d3d3d3;
+}
+/*护理质量上报、查询顶端标题*/
+table.tftableTop {font-size:15px;color:#333333;width:900px;border-collapse: collapse;margin-top:40px;}
+table.tftableTop th {font-size:15px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+table.tftableTop tr {background-color:#ffffff;padding: 5px; }
+table.tftableTop td {font-size:15px;border-width: 1px;padding: 5px;}

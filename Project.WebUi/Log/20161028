@@ -1,0 +1,22 @@
+2016-10-28 18:22:13,721 [10] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.ArgumentException: 另一个 SqlParameterCollection 中已包含 SqlParameter。
+   在 System.Data.SqlClient.SqlParameterCollection.Validate(Int32 index, Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   在 System.Data.SqlClient.SqlParameterCollection.Add(SqlParameter value)
+   在 Project.Common.SQLHelper.PrepareCommand(SqlCommand cmd, SqlConnection conn, SqlTransaction trans, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 273
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 69
+   在 Project.Dal.UserInfoDal.UpdatePwd(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 164
+2016-10-28 18:23:58,472 [14] ERROR Project.Dal.UserInfoDal [(null)] - Error
+System.Data.SqlClient.SqlException (0x80131904): 参数化查询 '(@UserId varchar(6),@UserName varchar(50),@UserPwd varchar(50),@' 需要参数 '@RoleId'，但未提供该参数。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Project.Common.SQLHelper.ExecuteNonQuery(String conString, CommandType cmdType, String cmdText, SqlParameter[] cmdParms) 位置 e:\HBDRS\Project.Common\SQLHelper.cs:行号 70
+   在 Project.Dal.UserInfoDal.UpdatePwd(UserInfo model, SqlTransaction trans) 位置 e:\HBDRS\Project.Dal\UserInfoDal.cs:行号 164
+ClientConnectionId:9997a7b6-bbce-4582-ad1c-da8e5437fa2a

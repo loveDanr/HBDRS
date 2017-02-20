@@ -1,0 +1,6 @@
+E:\HBDRS\Project.Common\bin\Release\Project.Common.dll
+E:\HBDRS\Project.Common\bin\Release\Project.Common.pdb
+E:\HBDRS\Project.Common\bin\Release\log4net.dll
+E:\HBDRS\Project.Common\obj\Release\Project.Common.dll
+E:\HBDRS\Project.Common\obj\Release\Project.Common.pdb
+E:\HBDRS\Project.Common\obj\Release\Project.Common.csprojResolveAssemblyReference.cache

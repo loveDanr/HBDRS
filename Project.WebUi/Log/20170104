@@ -1,0 +1,12 @@
+2017-01-04 09:58:47,611 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-01-04 10:00:25,256 [6] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/Login.aspx?ReturnUrl=%2fMZSSB%2fGZLrecord.aspx错误信息：找不到网络路径。
+2017-01-04 10:03:44,806 [22] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-01-04 10:18:06,062 [57] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/MZSSB/GZLrecord.aspx错误信息：e:\HBDRS\Project.WebUi\MZSSB\GZLrecord.aspx(35): error CS1061: “ASP.mzssb_gzlrecord_aspx”不包含“save_Click”的定义，并且找不到可接受类型为“ASP.mzssb_gzlrecord_aspx”的第一个参数的扩展方法“save_Click”(是否缺少 using 指令或程序集引用?)
+2017-01-04 10:18:09,793 [19] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/MZSSB/GZLrecord.aspx错误信息：e:\HBDRS\Project.WebUi\MZSSB\GZLrecord.aspx(35): error CS1061: “ASP.mzssb_gzlrecord_aspx”不包含“save_Click”的定义，并且找不到可接受类型为“ASP.mzssb_gzlrecord_aspx”的第一个参数的扩展方法“save_Click”(是否缺少 using 指令或程序集引用?)
+2017-01-04 10:18:11,696 [55] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/MZSSB/GZLrecord.aspx错误信息：e:\HBDRS\Project.WebUi\MZSSB\GZLrecord.aspx(35): error CS1061: “ASP.mzssb_gzlrecord_aspx”不包含“save_Click”的定义，并且找不到可接受类型为“ASP.mzssb_gzlrecord_aspx”的第一个参数的扩展方法“save_Click”(是否缺少 using 指令或程序集引用?)
+2017-01-04 10:18:35,726 [57] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/MZSSB/GZLrecord.aspx错误信息：e:\HBDRS\Project.WebUi\MZSSB\GZLrecord.aspx(35): error CS1061: “ASP.mzssb_gzlrecord_aspx”不包含“save_Click”的定义，并且找不到可接受类型为“ASP.mzssb_gzlrecord_aspx”的第一个参数的扩展方法“save_Click”(是否缺少 using 指令或程序集引用?)
+2017-01-04 10:18:38,189 [56] ERROR System.Web.HttpServerUtility [(null)] - 错误页面：/MZSSB/GZLrecord.aspx错误信息：e:\HBDRS\Project.WebUi\MZSSB\GZLrecord.aspx(35): error CS1061: “ASP.mzssb_gzlrecord_aspx”不包含“save_Click”的定义，并且找不到可接受类型为“ASP.mzssb_gzlrecord_aspx”的第一个参数的扩展方法“save_Click”(是否缺少 using 指令或程序集引用?)
+2017-01-04 10:19:27,746 [1] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-01-04 10:31:43,555 [69] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-01-04 10:36:41,577 [68] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行
+2017-01-04 10:51:00,420 [6] ERROR System.Web.HttpServerUtility [(null)] - 应用程序开始运行

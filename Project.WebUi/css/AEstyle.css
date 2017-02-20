@@ -1,0 +1,63 @@
+﻿/*不良事件-START*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #3E3E3E;
+}
+
+a {
+    outline: none;
+}
+
+.page-header {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    height: 22px;
+    width: 698px;
+    color: #4D4D4D;
+    cursor: pointer;
+    /*background-color: #ada8b1;*/
+    background-color: #F8F7FF;
+    border: 2px solid #ada8b1;
+    margin: auto;
+}
+
+.header-section {
+    width: 700px;
+    /*border: 1px solid #a1a7ab;*/
+    margin: auto;
+}
+
+table.custom {
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #EEF3FF;
+}
+
+.td_leftcol1 {
+    border: 2px solid #a1a7ab;
+    text-align: right;
+    width: 170px;
+}
+
+.td_leftcol2 {
+    border: 2px solid #a1a7ab;
+    text-align: right;
+    width: 180px;
+}
+
+.td_right {
+    border: 2px solid #a1a7ab;
+    text-align: left;
+    width: 170px;
+}
+
+.dxtvControl_Aqua .lm {
+    white-space: normal;
+    width: 440px;
+}
+/*不良事件-End*/

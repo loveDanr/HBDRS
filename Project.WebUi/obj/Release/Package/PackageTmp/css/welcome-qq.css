@@ -1,0 +1,223 @@
+﻿* html{ 
+background-image:url(about:blank); 
+background-attachment:fixed; 
+} 
+ .page-header {
+    margin: 12px 0 20px;
+    border-bottom: none;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+}
+        .page-header i {
+    color: #acb1b8;
+    margin-right: 10px;
+    float: left;
+    font-size: 30px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+        #main-content {
+            /*margin-left: 185px;*/
+            margin:50px;
+            display: block;
+        }
+
+        .wrapper {
+            display: inline-block;
+            margin-top: 50px;
+            /*padding: 15px;*/
+            width: 100%;
+        }
+
+        .row {
+            /*margin-left: -15px;
+            margin-right: -15px;*/
+        }
+
+        .dashboard {
+            width: 23%;
+            height:auto;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .info-box {
+            min-height: 140px;
+            margin-bottom: 30px;
+            padding: 20px;
+            color: white;
+            -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.35), 0 3px 1px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .blue-bg {
+            color: #fff;
+            background: #57889c url(../images/gallery.png) no-repeat left center ;
+            background-color: #57889c;
+        }
+
+        .brown-bg {
+            color: #fff;
+            background: #d1b993 url(../images/nurse.png) no-repeat left center;
+            background-color: #d1b993;
+        }
+
+        .dark-bg {
+            color: #fff;
+            background: #1a2732 url(../images/huanjing.png) no-repeat left center;
+            background-color: #1a2732;
+        }
+
+        .green-bg {
+            color: #fff;
+            background: #26c281 url(../images/myd.png) no-repeat left center;
+            background-color: #26c281;
+        }
+        .whiteblue-bg {
+            color: #fff;
+            background: #4cc0c1 url(../images/qixie.png) no-repeat left center;
+            background-color: #4cc0c1;
+            
+        }
+       
+        .red-bg{
+              color: #fff;
+            background:  #fb6b5b url(../images/buliang.png) no-repeat left center;
+            background-color:  #fb6b5b;
+
+        }
+         .cyan-bg {
+             color: #fff;
+            background:  #89cc97 url(../images/yaopin.png) no-repeat left center;
+            background-color:  #89cc97;
+        }
+         
+         .yellow-bg{
+              color: #fff;
+            background: #f8ac59 url(../images/women.png) no-repeat left center;
+            background-color:  #f8ac59;
+
+         }
+        .title {
+            
+            margin-top: 35px;
+            margin-left:90px;
+    font-size: 24px;
+    font-weight: 700;
+        }
+.dialog {
+    margin:  0 auto;
+}
+        .md-modal {
+            position: fixed;
+            width: 50%;
+            max-width: 630px;
+            min-width: 320px;
+            top: 50%;
+            left: 50%;
+             _position:absolute;
+            bottom:auto;
+            top:expression(eval(document.documentElement.scrollTop));
+            height: auto;
+            z-index: 2000;
+            display: none;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+           
+        }
+
+
+        .md-overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: none;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: #fff;
+            opacity: 0.5;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";   
+             filter: alpha(opacity=50);
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+
+
+        /* Content styles */
+        .md-content {
+            color: #000;
+            background: #fff;
+            position: relative;
+            border-radius: 3px;
+            margin: 0 auto;
+        }
+
+            .md-content h3 {
+                margin: 0;
+                padding: 0.4em;
+                text-align: center;
+                 color: #fff;
+                font-size: 2.4em;
+                font-weight: 300;
+                 background: #F44336;
+                opacity: 0.8;
+                 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";   
+                filter:alpha(opacity=80);
+                border-radius: 3px 3px 0 0;
+            }
+
+            .md-content > div {
+                padding: 15px 40px 30px;
+                margin: 0;
+                font-weight: 300;
+                font-size: 1.15em;
+            }
+
+                .md-content > div p {
+                    margin: 0;
+                    padding: 10px 0;
+                }
+
+                .md-content > div ul {
+                    margin: 0;
+                    padding: 0 0 30px 20px;
+                }
+
+                    .md-content > div ul li {
+                        padding: 5px 0;
+                    }
+
+            .md-content button {
+                display: block;
+                margin: 0 auto;
+                font-size: 0.8em;
+                border: none;
+                padding: 0.6em 1.2em;
+                background: #c0392b;
+                color: #fff;
+                font-family: 'Lato', Calibri, Arial, sans-serif;
+                font-size: 1em;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+
+        .title:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
