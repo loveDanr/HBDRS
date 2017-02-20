@@ -50,7 +50,11 @@ namespace Project.WebUi.JQGL
             rptList.DataSource = bll.QueryStaffInfoByID(ID,deptid);
             DataBind();
         }
-
+		/// <summary>
+        /// 设置一个label，如果假期天数超标就显示红色并且字体变大
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
         protected void rptList_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
 
