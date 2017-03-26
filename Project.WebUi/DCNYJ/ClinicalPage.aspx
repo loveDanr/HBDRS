@@ -16,7 +16,6 @@
                     if (form.elements[i].value == "") { //form属性的elements的首字母e要小写
                         alert("很抱歉," + form.elements[i].value + "不能为空^-^");
                         form.elements[i].focus(); //当前元素获取焦点
-
                         return false;
                     }
                     else {

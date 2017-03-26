@@ -9,5 +9,6 @@ namespace Project.Bll
 {
     class DCNYJ_CBll
     {
+
     }
 }

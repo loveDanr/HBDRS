@@ -6,7 +6,7 @@ using System.Text;
 namespace Project.Model
 {
     /// <summary>
-    /// 多重耐药菌——职能科室model类
+    /// 多重耐药菌MODEL
     /// </summary>
     public class DCNYJ
     {
