@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>请假</title>
+    <title>请假页面</title>
 </head>
     <link id="cssfile" href="../css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
