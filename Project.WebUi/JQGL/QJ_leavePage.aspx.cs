@@ -49,7 +49,7 @@ namespace Project.WebUi.JQGL
             DateTime beginTime1 = DateTime.Parse(beginTime);
             TimeSpan time = endTime1 - beginTime1;
             int days = time.Days;
-            Days_label.Text = Convert.ToString(days);
+            Days_label.Text = Convert.ToString(days) + "天" + time.Hours + "小时";
         }
         protected void ShowData()
         {
