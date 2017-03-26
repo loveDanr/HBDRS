@@ -29,7 +29,7 @@
         <tr>
             <td align="right">请假日期：</td>
             
-            <td align="left"><table style="width=350px;"><td><dx:ASPxTimeEdit ID="startDate" runat="server"  DisplayFormatString="yyyy-MM-dd" Width="120px" EditFormat="Custom" EditFormatString="yyyy-MM-dd" OnDateChanged="CountBtn_Click" AutoPostBack="true"></dx:ASPxTimeEdit></td><td><asp:Label ID="Label1" runat="server" Text="至"></asp:Label></td><td><dx:ASPxTimeEdit ID="endDate" runat="server"  DisplayFormatString="yyyy-MM-dd" Width="120px" EditFormat="Custom" EditFormatString="yyyy-MM-dd" OnDateChanged="CountBtn_Click" AutoPostBack="true"></dx:ASPxTimeEdit></td><td><asp:Button ID="CountBtn" runat="server" Text="共计" OnClick="CountBtn_Click"/>&nbsp;&nbsp;<asp:Label ID="Days_label" runat="server" Text="Label"></asp:Label><asp:Label ID="Label3" runat="server" Text="天"></asp:Label></td></table></td>
+            <td align="left"><table style="width=350px;"><td><dx:ASPxTimeEdit ID="startDate" runat="server"  DisplayFormatString="yyyy-MM-dd HH:00" Width="150px" EditFormat="Custom" EditFormatString="yyyy-MM-dd HH:00" OnDateChanged="CountBtn_Click" AutoPostBack="true"></dx:ASPxTimeEdit></td><td><asp:Label ID="Label1" runat="server" Text="至"></asp:Label></td><td><dx:ASPxTimeEdit ID="endDate" runat="server"  DisplayFormatString="yyyy-MM-dd HH:00" Width="150px" EditFormat="Custom" EditFormatString="yyyy-MM-dd HH:00" OnDateChanged="CountBtn_Click" AutoPostBack="true"></dx:ASPxTimeEdit></td><td><asp:Button ID="CountBtn" runat="server" Text="共计" OnClick="CountBtn_Click"/>&nbsp;&nbsp;<asp:Label ID="Days_label" runat="server" Text="Label"></asp:Label><asp:Label ID="Label3" runat="server" Text="天"></asp:Label></td></table></td>
         </tr>
         <tr>
             <td align="right">请假原因：</td>
