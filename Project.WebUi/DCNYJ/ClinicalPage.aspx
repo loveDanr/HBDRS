@@ -57,7 +57,7 @@ function loadCss() {
                             上报时间:</label>
                     </td>
                         <td>
-                           <dx:ASPxTimeEdit ID="ASPxRYear" runat="server" DisplayFormatString="yyyy-MM" EditFormat="Date" EditFormatString="yyyy-MM" Width="100px"></dx:ASPxTimeEdit>
+                           <dx:ASPxTimeEdit ID="ASPxRYear" runat="server" DisplayFormatString="yyyy-MM-dd" EditFormat="Date" EditFormatString="yyyy-MM-dd" Width="100px"></dx:ASPxTimeEdit>
                     </td>
                         <td>
                             &nbsp;</td>
