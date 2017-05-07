@@ -54,6 +54,7 @@
     <Compile Include="ArticleBll.cs" />
     <Compile Include="ArticleTypeBll.cs" />
     <Compile Include="BzswbBll.cs" />
+    <Compile Include="DCNYJBll.cs" />
     <Compile Include="DepartmentBll.cs" />
     <Compile Include="HLBQBll.cs" />
     <Compile Include="HLZLBll.cs" />

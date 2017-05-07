@@ -22,6 +22,8 @@ namespace Project.WebUi.DCNYJREPORT
     {
         protected LoginUserInfo LoginUser = null;
         public string checkDept = null;         //科室名称
+        public string areaID = null;              //片区ID
+        public string TitleName = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -30,6 +32,7 @@ namespace Project.WebUi.DCNYJREPORT
                 YearTimeEditStart.DateTime = System.DateTime.Now.AddMonths(-1).Date;
                 YearTimeEditEnd.DateTime = System.DateTime.Now;
                 ASPxDropDownEditDept.Text = "全院";
+                JCorDD.Text = "多重耐药菌患者检出(督导)例次数";
                 GridViewOther.Visible = false;
  
             }
@@ -40,11 +43,25 @@ namespace Project.WebUi.DCNYJREPORT
         /// </summary>
         private void GetDeptName()
         {
+            //这三个科室的id
+           
             LoginUser = CommonFun.GetCookieUserData<LoginUserInfo>(this.Page);
             DepartmentBll bll = new DepartmentBll();
             Department dept = bll.GetDepartment(loginUser.DeptId);
             checkDept = dept.DeptName;
         }
+        /// <summary>
+        /// 获取比率
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        private void GetRate(int a,int b)
+        {
+            float r = (float)b / (float)a * 100;
+            per_txt.Text = Convert.ToString(r.ToString("#0.00")).Trim()+"%";
+        }
+
         protected void ASPxTreeViewDept_VirtualModeCreateChildren(object source, TreeViewVirtualModeCreateChildrenEventArgs e)
         {
             HLBQBll bll = new HLBQBll();
@@ -121,6 +138,14 @@ namespace Project.WebUi.DCNYJREPORT
                     }
                 }
             }
+            if (checkDept == "2" || checkDept == "333" || checkDept == "233")
+            {
+                JCorDD.Text = "多重耐药菌患者督导例次数";
+            }
+            else
+            {
+                JCorDD.Text = "多重耐药菌患者检出例次数";
+            }
 
             //每个textbox获取数据库里相应字段的数值
             string startDate = YearTimeEditStart.DateTime.ToString("yyyy-MM");
@@ -151,6 +176,7 @@ namespace Project.WebUi.DCNYJREPORT
                     fhcs_txt.Text = model.Fhcs.ToString();
                     bzx_txt.Text = model.Bzx.ToString();
                     other_txt.Text = "请查看下方表格";
+                    GetRate(model.Hzzjcls,model.Yxzxls);
                 }
                 else
                 {
@@ -167,6 +193,7 @@ namespace Project.WebUi.DCNYJREPORT
                     fhcs_txt.Text = "";
                     bzx_txt.Text = "";
                     other_txt.Text = "";
+                    per_txt.Text = "";
                     GridViewOther.Visible = false;
                     return;
                 }
@@ -187,6 +214,7 @@ namespace Project.WebUi.DCNYJREPORT
                 ylfw_txt.Text = model.Ylfw.ToString();
                 fhcs_txt.Text = model.Fhcs.ToString();
                 bzx_txt.Text = model.Bzx.ToString();
+                GetRate(model.Hzzjcls, model.Yxzxls);
                 if (startDate == endDate&&!String.IsNullOrEmpty(areaID))
                 {
                     other_txt.Text = "请看下方表格";

@@ -191,7 +191,7 @@ sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where report_dept=@report_dept and c
             const string ifArea = @"select sum(hzjcls) as hzjcls,sum(yxzxls) as yxzxls,sum(wgl) as wgl,sum(xdj)as xdj,sum(sws)as sws,sum(wjcz)as wjcz,sum(tzq)as tzq,sum(xdbdw) as xdbdw,sum(ylfw)as ylfw,
 sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ a ,Department b where a.report_dept=b.Deptid and convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate and b.DeptPQ=@AreaID";
             const string ifGlobal = @"select sum(hzjcls) as hzjcls,sum(yxzxls) as yxzxls,sum(wgl) as wgl,sum(xdj)as xdj,sum(sws)as sws,sum(wjcz)as wjcz,sum(tzq)as tzq,sum(xdbdw) as xdbdw,sum(ylfw)as ylfw,
-sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate";
+sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate and report_dept<>'1' and report_dept<>'1' and report_dept<>'1' ";   ///三个科室的id
             SqlParameter[] parms = {
                                         new SqlParameter("@startDate",SqlDbType.VarChar,25),
                                         new SqlParameter("@endDate",SqlDbType.VarChar,25),

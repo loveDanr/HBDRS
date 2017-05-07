@@ -56,3 +56,13 @@ D:\C#DevelopProject\HMS_my\Project.Dal\bin\Debug\Project.Model.pdb
 D:\C#DevelopProject\HMS_my\Project.Dal\obj\Debug\Project.Dal.csprojResolveAssemblyReference.cache
 D:\C#DevelopProject\HMS_my\Project.Dal\obj\Debug\Project.Dal.dll
 D:\C#DevelopProject\HMS_my\Project.Dal\obj\Debug\Project.Dal.pdb
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Dal.dll
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Dal.pdb
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Common.dll
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Model.dll
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\log4net.dll
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Common.pdb
+D:\C#DevelopProject\HMS_Github\Project.Dal\bin\Debug\Project.Model.pdb
+D:\C#DevelopProject\HMS_Github\Project.Dal\obj\Debug\Project.Dal.csprojResolveAssemblyReference.cache
+D:\C#DevelopProject\HMS_Github\Project.Dal\obj\Debug\Project.Dal.dll
+D:\C#DevelopProject\HMS_Github\Project.Dal\obj\Debug\Project.Dal.pdb

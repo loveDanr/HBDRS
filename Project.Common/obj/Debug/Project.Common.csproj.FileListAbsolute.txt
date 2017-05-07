@@ -31,3 +31,9 @@ D:\C#DevelopProject\HMS_my\Project.Common\bin\Debug\log4net.dll
 D:\C#DevelopProject\HMS_my\Project.Common\obj\Debug\Project.Common.csprojResolveAssemblyReference.cache
 D:\C#DevelopProject\HMS_my\Project.Common\obj\Debug\Project.Common.dll
 D:\C#DevelopProject\HMS_my\Project.Common\obj\Debug\Project.Common.pdb
+D:\C#DevelopProject\HMS_Github\Project.Common\bin\Debug\Project.Common.dll
+D:\C#DevelopProject\HMS_Github\Project.Common\bin\Debug\Project.Common.pdb
+D:\C#DevelopProject\HMS_Github\Project.Common\bin\Debug\log4net.dll
+D:\C#DevelopProject\HMS_Github\Project.Common\obj\Debug\Project.Common.csprojResolveAssemblyReference.cache
+D:\C#DevelopProject\HMS_Github\Project.Common\obj\Debug\Project.Common.dll
+D:\C#DevelopProject\HMS_Github\Project.Common\obj\Debug\Project.Common.pdb

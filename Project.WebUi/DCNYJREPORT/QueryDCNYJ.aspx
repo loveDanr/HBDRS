@@ -10,6 +10,17 @@
     <title>多重耐药菌医院感染核心防控措施执行率统计查询</title>
     <link id="cssfile" href="../css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
+       
+        var flag=false; 
+        function displayDiv() 
+        { 
+            var div=document.getElementById("2"); 
+            if(flag) 
+                div.style.display="block"; 
+            else 
+                div.style.display="none"; 
+            flag=!flag; 
+        }
         function loadCss() {
             var cls = top.document.getElementById("cssfile").href.split("/");
             var css = "../css/" + cls[cls.length - 1];
@@ -61,17 +72,26 @@
                 </table>
             </div>
         <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
-        <div class="bottom">
-                <table id="tfhover" class="msgtable">
-                    <tr align="left">
-                        <td>多重耐药菌患者检出(督导)例次数</td>
-                        <td><asp:Label ID="hzjcls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+         <table id="tfhover" style="width:850px;margin-top:30px"" class="msgtable">
+<tr align="left">
+                        <td style="text-align:center"><asp:Label ID="JCorDD" runat="server" Text="Label"></asp:Label></td>
+                        <td style="text-align:center">多重耐药菌医院感染核心防控措施的例次数</td>
+			            <td style="text-align:center">比率</td>
+                         <td style="text-align:center">执行不到位原因</td>
                         </tr>
                         <tr align="left">
-                        <td>有效执行多重耐药菌医院感染核心防控措施的例次数</td>
-                        <td><asp:Label ID="yxzxls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+                        <td style="text-align:center"><asp:Label ID="hzjcls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+                        <td style="text-align:center"><asp:Label ID="yxzxls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+<td style="text-align:center"><asp:Label ID="per_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+                            <td style="text-align:center"><a id="a1" class="button blue small" style="text-align:center" runat="server" href="#" onclick="displayDiv()">查看详情</a></td>
+                            
                         </tr>
-                    <tr align="left"><td style="font-size:15px;font-weight:bold">核心防控措施执行不到位原因：</td></tr>
+</table>
+        <div id="2" style="display:none;border:none;width:850px" class="bottom" >
+           
+                <table id="tfhover" style="border:none;width:850px" class="msgtable" >
+                  
+                    <tr align="left"><td style="font-size:15px;font-weight:bold;border:none">核心防控措施执行不到位原因：</td></tr>
                         <tr align="center">
                             <th style="width: 100%">不合格项目</th>
                             <th>例次数</th>
@@ -127,7 +147,7 @@
                                 <asp:Label ID="other_txt" runat="server" BorderStyle="None" Width="192px" MaxLength="6" Font-Size="10px" TextMode="MultiLine"></asp:Label></td>
                         </tr>
 </table>       
-            <div style="float:left;padding-top:10px;"><asp:GridView ID="GridViewOther" runat="server" CssClass="msgtable"  AutoGenerateColumns="False" EmptyDataText="空" ShowFooter="True" ShowHeaderWhenEmpty="True" Font-Size="15px" OnDataBinding="GridViewOther_DataBinding" OnRowDataBound="GridViewOther_RowDataBound">
+            <div style="float:left;margin-top:10px"><asp:GridView ID="GridViewOther" runat="server" CssClass="msgtable"  AutoGenerateColumns="False" EmptyDataText="空" ShowFooter="True" ShowHeaderWhenEmpty="True" Font-Size="15px" OnDataBinding="GridViewOther_DataBinding" OnRowDataBound="GridViewOther_RowDataBound">
                             <Columns>
                                 <asp:BoundField DataField="id" HeaderText="序号" />
                                 <asp:BoundField DataField="report_dept" HeaderText="上报科室" />

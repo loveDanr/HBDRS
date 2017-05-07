@@ -429,6 +429,11 @@
     <Content Include="css\style-qq.css" />
     <Content Include="css\style.css" />
     <Content Include="css\welcome-qq.css" />
+    <Content Include="DCNYJREPORT\ClinicalPage.aspx" />
+    <Content Include="DCNYJREPORT\DetailsPage.aspx" />
+    <Content Include="DCNYJREPORT\FunctionalPage.aspx" />
+    <Content Include="DCNYJREPORT\QueryDCNYJ.aspx" />
+    <Content Include="DCNYJREPORT\QueryDCNYJDept.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="GRKHJJC\HJWSSG.aspx" />
     <Content Include="GRKHJJC\HJWSSGbgsh.aspx" />
@@ -1150,6 +1155,41 @@
     </Compile>
     <Compile Include="App_Code\MyBasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\ClinicalPage.aspx.cs">
+      <DependentUpon>ClinicalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\ClinicalPage.aspx.designer.cs">
+      <DependentUpon>ClinicalPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DCNYJREPORT\DetailsPage.aspx.cs">
+      <DependentUpon>DetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\DetailsPage.aspx.designer.cs">
+      <DependentUpon>DetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DCNYJREPORT\FunctionalPage.aspx.cs">
+      <DependentUpon>FunctionalPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\FunctionalPage.aspx.designer.cs">
+      <DependentUpon>FunctionalPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DCNYJREPORT\QueryDCNYJ.aspx.cs">
+      <DependentUpon>QueryDCNYJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\QueryDCNYJ.aspx.designer.cs">
+      <DependentUpon>QueryDCNYJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DCNYJREPORT\QueryDCNYJDept.aspx.cs">
+      <DependentUpon>QueryDCNYJDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DCNYJREPORT\QueryDCNYJDept.aspx.designer.cs">
+      <DependentUpon>QueryDCNYJDept.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>

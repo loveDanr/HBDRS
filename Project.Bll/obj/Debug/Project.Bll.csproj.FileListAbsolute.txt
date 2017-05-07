@@ -79,3 +79,15 @@ D:\C#DevelopProject\HMS_my\Project.Bll\bin\Debug\Project.Model.pdb
 D:\C#DevelopProject\HMS_my\Project.Bll\obj\Debug\Project.Bll.csprojResolveAssemblyReference.cache
 D:\C#DevelopProject\HMS_my\Project.Bll\obj\Debug\Project.Bll.dll
 D:\C#DevelopProject\HMS_my\Project.Bll\obj\Debug\Project.Bll.pdb
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Bll.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Bll.pdb
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Common.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Dal.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Model.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\log4net.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Common.pdb
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Dal.pdb
+D:\C#DevelopProject\HMS_Github\Project.Bll\bin\Debug\Project.Model.pdb
+D:\C#DevelopProject\HMS_Github\Project.Bll\obj\Debug\Project.Bll.csprojResolveAssemblyReference.cache
+D:\C#DevelopProject\HMS_Github\Project.Bll\obj\Debug\Project.Bll.dll
+D:\C#DevelopProject\HMS_Github\Project.Bll\obj\Debug\Project.Bll.pdb

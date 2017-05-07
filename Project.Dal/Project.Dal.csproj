@@ -55,6 +55,7 @@
     <Compile Include="ArticleDal.cs" />
     <Compile Include="ArticleTypeDal.cs" />
     <Compile Include="BzswbDal.cs" />
+    <Compile Include="DCNYJDal.cs" />
     <Compile Include="DepartmentDal.cs" />
     <Compile Include="HLBQDal.cs" />
     <Compile Include="HLZLDal.cs" />

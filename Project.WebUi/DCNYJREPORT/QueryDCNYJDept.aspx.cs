@@ -41,16 +41,37 @@ namespace Project.WebUi.DCNYJREPORT
 
         }
         /// <summary>
+        /// 获取比率
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        private void GetRate(int a, int b)
+        {
+            float r = (float)b / (float)a * 100;
+            per_txt.Text = Convert.ToString(r.ToString("#0.00")).Trim() + "%";
+        }
+        /// <summary>
         /// 获取当前登录人的科室名称
         /// </summary>
         private string GetDeptName()
-        {
+        { //这三个科室的id
+            if (loginUser.DeptId == "2" || loginUser.DeptId == "" || loginUser.DeptId == "")
+            {
+                JCorDD.Text = "多重耐药菌患者督导例次数";
+            }
+            else
+            {
+                JCorDD.Text = "多重耐药菌患者检出例次数";
+            }
             string deptname;
             LoginUser = CommonFun.GetCookieUserData<LoginUserInfo>(this.Page);
             DepartmentBll bll = new DepartmentBll();
             Department dept = bll.GetDepartment(loginUser.DeptId);
             deptname = dept.DeptName;
             return deptname;
+
+           
         }
 
         /// <summary>
@@ -89,6 +110,7 @@ namespace Project.WebUi.DCNYJREPORT
                 fhcs_txt.Text = model.Fhcs.ToString();
                 bzx_txt.Text = model.Bzx.ToString();
                 other_txt.Text = "请查看下方表格";
+                GetRate(model.Hzzjcls, model.Yxzxls);
                 GridViewOther.DataBind();
                 queryFix.Visible = false;
             }
@@ -111,6 +133,7 @@ namespace Project.WebUi.DCNYJREPORT
                     fhcs_txt.Text = model.Fhcs.ToString();
                     bzx_txt.Text = model.Bzx.ToString();
                     other_txt.Text = model.Other.ToString();
+                    GetRate(model.Hzzjcls, model.Yxzxls);
                 }
                 else
                 {
@@ -127,6 +150,7 @@ namespace Project.WebUi.DCNYJREPORT
                     fhcs_txt.Text = "";
                     bzx_txt.Text = "";
                     other_txt.Text = "";
+                    per_txt.Text = "";
                     GridViewOther.Visible = false;
                     return;
                 }

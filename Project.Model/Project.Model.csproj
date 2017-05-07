@@ -54,6 +54,7 @@
     <Compile Include="Article.cs" />
     <Compile Include="ArticleType.cs" />
     <Compile Include="Bzswb.cs" />
+    <Compile Include="DCNYJ.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="HLX_Area.cs" />
     <Compile Include="HLZL.cs" />

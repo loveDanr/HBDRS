@@ -136,11 +136,11 @@ namespace Project.Model
             get { return bzx; }
             set { bzx = value; }
         }
-        private int other;
+        private string other;
         /// <summary>
         /// 其他
         /// </summary>
-        public int Other
+        public string Other
         {
             get { return other; }
             set { other = value; }

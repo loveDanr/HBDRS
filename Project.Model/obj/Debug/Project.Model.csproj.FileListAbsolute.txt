@@ -27,3 +27,8 @@ D:\C#DevelopProject\HMS_my\Project.Model\bin\Debug\Project.Model.pdb
 D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
 D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.dll
 D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.pdb
+D:\C#DevelopProject\HMS_Github\Project.Model\bin\Debug\Project.Model.dll
+D:\C#DevelopProject\HMS_Github\Project.Model\bin\Debug\Project.Model.pdb
+D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
+D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.dll
+D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.pdb
