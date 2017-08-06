@@ -1,34 +1,10 @@
-F:\Project\Project.Model\bin\Debug\Project.Model.dll
-F:\Project\Project.Model\bin\Debug\Project.Model.pdb
-F:\Project\Project.Model\obj\Debug\ResolveAssemblyReference.cache
-F:\Project\Project.Model\obj\Debug\Project.Model.dll
-F:\Project\Project.Model\obj\Debug\Project.Model.pdb
-E:\项目\wwb调试\审核后台源码\JSS通用权限系统2012109版\Project\Project.Model\bin\Debug\Project.Model.dll
-E:\项目\wwb调试\审核后台源码\JSS通用权限系统2012109版\Project\Project.Model\bin\Debug\Project.Model.pdb
-E:\项目\wwb调试\审核后台源码\JSS通用权限系统2012109版\Project\Project.Model\obj\Debug\ResolveAssemblyReference.cache
-E:\项目\wwb调试\审核后台源码\JSS通用权限系统2012109版\Project\Project.Model\obj\Debug\Project.Model.dll
-E:\项目\wwb调试\审核后台源码\JSS通用权限系统2012109版\Project\Project.Model\obj\Debug\Project.Model.pdb
-E:\HBDRS\Project.Model\bin\Debug\Project.Model.dll
-E:\HBDRS\Project.Model\bin\Debug\Project.Model.pdb
-E:\HBDRS\Project.Model\obj\Debug\Project.Model.dll
-E:\HBDRS\Project.Model\obj\Debug\Project.Model.pdb
-D:\Dev\HMS\Project.Model\bin\Debug\Project.Model.dll
-D:\Dev\HMS\Project.Model\bin\Debug\Project.Model.pdb
-D:\Dev\HMS\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
-D:\Dev\HMS\Project.Model\obj\Debug\Project.Model.dll
-D:\Dev\HMS\Project.Model\obj\Debug\Project.Model.pdb
-D:\Dev\HMS_my\Project.Model\bin\Debug\Project.Model.dll
-D:\Dev\HMS_my\Project.Model\bin\Debug\Project.Model.pdb
-D:\Dev\HMS_my\Project.Model\obj\Debug\Project.Model.dll
-D:\Dev\HMS_my\Project.Model\obj\Debug\Project.Model.pdb
-D:\Dev\HMS_my\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
-D:\C#DevelopProject\HMS_my\Project.Model\bin\Debug\Project.Model.dll
-D:\C#DevelopProject\HMS_my\Project.Model\bin\Debug\Project.Model.pdb
-D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
-D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.dll
-D:\C#DevelopProject\HMS_my\Project.Model\obj\Debug\Project.Model.pdb
+C:\Users\ERIC\Documents\Visual Studio 2013\Projects\HBDRS\Project.Model\bin\Debug\Project.Model.dll
+C:\Users\ERIC\Documents\Visual Studio 2013\Projects\HBDRS\Project.Model\bin\Debug\Project.Model.pdb
+C:\Users\ERIC\Documents\Visual Studio 2013\Projects\HBDRS\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
+C:\Users\ERIC\Documents\Visual Studio 2013\Projects\HBDRS\Project.Model\obj\Debug\Project.Model.dll
+C:\Users\ERIC\Documents\Visual Studio 2013\Projects\HBDRS\Project.Model\obj\Debug\Project.Model.pdb
 D:\C#DevelopProject\HMS_Github\Project.Model\bin\Debug\Project.Model.dll
 D:\C#DevelopProject\HMS_Github\Project.Model\bin\Debug\Project.Model.pdb
-D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache
 D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.dll
 D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.pdb
+D:\C#DevelopProject\HMS_Github\Project.Model\obj\Debug\Project.Model.csprojResolveAssemblyReference.cache

@@ -56,7 +56,7 @@ namespace Project.WebUi.DCNYJREPORT
         /// </summary>
         private string GetDeptName()
         { //这三个科室的id
-            if (loginUser.DeptId == "2" || loginUser.DeptId == "" || loginUser.DeptId == "")
+            if (loginUser.DeptId == "472" || loginUser.DeptId == "473" || loginUser.DeptId == "497")
             {
                 JCorDD.Text = "多重耐药菌患者督导例次数";
             }
@@ -97,6 +97,16 @@ namespace Project.WebUi.DCNYJREPORT
             }
             else if (totalMonth > 0)
             {
+                foreach (Control ctl in this.Controls)
+                {
+                    if (ctl is TextBox)
+                    {
+                        TextBox tb = ctl as TextBox;
+                        tb.ReadOnly=true;
+                    }
+                }
+                //hzjcls_txt.ReadOnly = true;
+                //yxzxls_txt.ReadOnly = true;
                 DCNYJ model = bll.GetReportInfo(startDate, endDate, checkDept, areaID);
                 hzjcls_txt.Text = model.Hzzjcls.ToString();
                 yxzxls_txt.Text = model.Yxzxls.ToString();
@@ -194,10 +204,10 @@ namespace Project.WebUi.DCNYJREPORT
                 model.Other = other_txt.Text.Trim();
                 n = bll.Update(model,startDate,endDate,null);
                 if (n > 0)
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('修改成功！');frameElement.api.opener.location.reload();  </script>");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('修改成功！')</script>");
 
                 else
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('修改失败！');frameElement.api.opener.location.reload(); </script>");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('修改失败！')</script>");
 
             }
 

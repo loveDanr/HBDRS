@@ -105,7 +105,7 @@ namespace Project.Dal
         /// <returns></returns>
         public int CheckExist(DCNYJ model, SqlTransaction trans)
         {
-            const string sql = "select count(*) from DCNYJ where report_dept=@report_dept and datepart(mm,report_date)=datepart(mm,@report_date)";
+            const string sql = "select count(*) from DCNYJ where report_dept=@report_dept and convert(char(7) ,report_date , 120)=convert(char(7) ,@report_date , 120)";
             SqlParameter[] parms = GetParms(model);
             int n = 0;
             try
@@ -191,7 +191,7 @@ sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where report_dept=@report_dept and c
             const string ifArea = @"select sum(hzjcls) as hzjcls,sum(yxzxls) as yxzxls,sum(wgl) as wgl,sum(xdj)as xdj,sum(sws)as sws,sum(wjcz)as wjcz,sum(tzq)as tzq,sum(xdbdw) as xdbdw,sum(ylfw)as ylfw,
 sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ a ,Department b where a.report_dept=b.Deptid and convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate and b.DeptPQ=@AreaID";
             const string ifGlobal = @"select sum(hzjcls) as hzjcls,sum(yxzxls) as yxzxls,sum(wgl) as wgl,sum(xdj)as xdj,sum(sws)as sws,sum(wjcz)as wjcz,sum(tzq)as tzq,sum(xdbdw) as xdbdw,sum(ylfw)as ylfw,
-sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate and report_dept<>'1' and report_dept<>'1' and report_dept<>'1' ";   ///三个科室的id
+sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate and report_dept<>'472' and report_dept<>'473' and report_dept<>'497' ";   ///三个科室的id
             SqlParameter[] parms = {
                                         new SqlParameter("@startDate",SqlDbType.VarChar,25),
                                         new SqlParameter("@endDate",SqlDbType.VarChar,25),
@@ -256,7 +256,88 @@ sum(fhcs)as fhcs,sum(bzx) as bzx from DCNYJ where convert(char(7) ,report_date ,
                 return model;
             }
         }
+        /// <summary>
+        /// 批量展示所有查询页面所有科室的上报详细信息
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public DataSet QueryInfoForAllDisplay(string startDate, string endDate, string dept, string area)
+        {
+            const string ifDept = @"select a.id,b.DeptName,a.report_date,a.hzjcls,a.yxzxls from DCNYJ a,Department b where a.report_dept=b.DeptID and report_dept=@report_dept and convert(char(7) ,a.report_date , 120)>=@startDate and convert(char(7) ,a.report_date , 120)<=@endDate";
+            const string ifTimeEqual = @"select hzjcls,yxzxls,wgl,xdj,sws,wjcz,tzq,xdbdw,ylfw,fhcs,bzx,other from DCNYJ where report_dept=@report_dept and convert(char(7) ,report_date , 120)>=@startDate and convert(char(7) ,report_date , 120)<=@endDate";
+            const string ifArea = @"select a.id,b.DeptName,a.report_date,a.hzjcls,a.yxzxls from DCNYJ a ,Department b where a.report_dept=b.Deptid and convert(char(7) ,a.report_date , 120)>=@startDate and convert(char(7) ,a.report_date , 120)<=@endDate and b.DeptPQ=@AreaID";
+            const string ifGlobal = @"select a.id,b.DeptName,a.report_date,a.hzjcls,a.yxzxls from DCNYJ a,Department b where  a.report_dept=b.DeptID and convert(char(7) ,a.report_date , 120)>=@startDate and convert(char(7) ,a.report_date , 120)<=@endDate and a.report_dept<>'472' and a.report_dept<>'473' and a.report_dept<>'497' ";   ///三个科室的id
+            SqlParameter[] parms = {
+                                        new SqlParameter("@startDate",SqlDbType.VarChar,25),
+                                        new SqlParameter("@endDate",SqlDbType.VarChar,25),
+										new SqlParameter("@report_dept",SqlDbType.VarChar,3),
+                                        new SqlParameter("@AreaID",SqlDbType.NVarChar,7)
+                                    };
+            DCNYJ model = null;
+            parms[0].Value = startDate;
+            parms[1].Value = endDate;
+            if (dept == "" && dept == null)
+            {
+                parms[2].Value = "";
+            }
+            else
+            {
+                parms[2].Value = dept;
+            }
+            parms[3].Value = area;
+            if (dept != "" && dept != null&&area=="")
+            {
+                using (DataSet dt = SQLHelper.ExecuteDataSet(SQLHelper.ConnectionString, CommandType.Text, ifDept, parms))
+                {
+                    return dt;
+                }
+            }
+            else if (dept != "" && dept != null && startDate == endDate)
+            {
 
+                using (DataSet dt = SQLHelper.ExecuteDataSet(SQLHelper.ConnectionString, CommandType.Text, ifTimeEqual, parms))
+                {
+                    return dt;
+                }
+            }
+            else if (!string.IsNullOrEmpty(area))
+            {
+                using (DataSet dt = SQLHelper.ExecuteDataSet(SQLHelper.ConnectionString, CommandType.Text, ifArea, parms))
+                {
+                    return dt;
+                }
+            }
+            else
+            {
+                using (DataSet dt = SQLHelper.ExecuteDataSet(SQLHelper.ConnectionString, CommandType.Text, ifGlobal, parms))
+                {
+                    return dt;
+                }
+            }
+        }
+        /// <summary>
+        /// 根据id获取某一条科室上报信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public DCNYJ QueryInfoByID(int id)
+        {
+            const string ifDept = @"select * from DCNYJ where id=@id";
+            SqlParameter[] parms = {
+                                        new SqlParameter("@id",SqlDbType.Int)
+                                    };
+            DCNYJ model = null;
+            parms[0].Value = id;
+            using (SqlDataReader dr = SQLHelper.ExecuteReader(SQLHelper.ConnectionString, CommandType.Text, ifDept, parms))
+            {
+                if (dr.Read())
+                {
+                    model = LoadModelIfTimeEqual(dr);
+                }
+            }
+            return model;
+
+        }
         private DCNYJ LoadModel(IDataReader dr)
         {
             DCNYJ model = new DCNYJ();

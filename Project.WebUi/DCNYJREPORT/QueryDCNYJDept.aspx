@@ -11,7 +11,7 @@
     <link id="cssfile" href="../css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
 
-         var flag = false;
+         var flag = true;
         function displayDiv() {
           
             var div = document.getElementById("2");
@@ -80,17 +80,19 @@
     
                         </tr>
                         <tr align="left">
-                        <td style="text-align:center"><asp:Label ID="hzjcls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
-                        <td style="text-align:center"><asp:Label ID="yxzxls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
-<td ><asp:Label ID="per_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
+                        <td style="text-align:center"><asp:TextBox ID="hzjcls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6"  Font-Size="15px"></asp:TextBox></td>
+                        <td style="text-align:center"><asp:TextBox ID="yxzxls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:TextBox></td>
+<td style="text-align:center"><asp:Label ID="per_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
                             <td style="text-align:center"><a id="a1" class="button blue small"  style="text-align:center" runat="server"  onclick="displayDiv()">查看详情</a></td>
                             
                         </tr>
+
+
 </table>
         <div id="2" style="display:none;border:none;width:850px" class="bottom" >
            
                 <table id="tfhover" style="border:none;width:850px" class="msgtable" >
-                    <tr align="left"><td style="font-size:15px;font-weight:bold;border:none">核心防控措施执行不到位原因：</td></tr>
+                    <tr align="left"><td style="font-size:15px;font-weight:bold;border:none;background-color:#ffffff">核心防控措施执行不到位原因：</td></tr>
                         <tr align="center">
                             <th style="width: 100%">不合格项目</th>
                             <th>例次数</th>

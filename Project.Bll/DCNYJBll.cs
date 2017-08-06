@@ -42,7 +42,30 @@ namespace Project.Bll
         {
             return dal.QueryOther(startDate,endDate,dept,area);
         }
-
+        /// <summary>
+        /// 查总信息比率
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <param name="dept"></param>
+        /// <param name="area"></param>
+        /// <returns></returns>
+        public DataSet QueryAllInfo(string startDate, string endDate, string dept, string area)
+        {
+            return dal.QueryOther(startDate, endDate, dept, area);
+        }
+        /// <summary>
+        /// 查询所有信息页面批量展示
+        /// </summary>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <param name="dept"></param>
+        /// <param name="area"></param>
+        /// <returns></returns>
+        public DataSet QueryInfoForAllDisplay(string startDate, string endDate, string dept, string area)
+        {
+            return dal.QueryInfoForAllDisplay(startDate, endDate, dept, area);
+        }
         /// <summary>
         /// 查某年某月某科室的上报信息
         /// </summary>
@@ -53,7 +76,15 @@ namespace Project.Bll
             return dal.QueryInfo(startDate, endDate, dept, area);
 
         }
-
+        /// <summary>
+        /// 根据id获取某科室的信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public DCNYJ QueryInfoByID(int id)
+        {
+            return dal.QueryInfoByID(id);
+        }
         /// <summary>
         /// 查看上报记录是否已存在
         /// </summary>
@@ -64,7 +95,7 @@ namespace Project.Bll
         {
             return dal.CheckExist(model, trans);
         }
-
+        
 
     }
 }

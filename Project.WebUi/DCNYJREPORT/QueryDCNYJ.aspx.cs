@@ -32,7 +32,8 @@ namespace Project.WebUi.DCNYJREPORT
                 YearTimeEditStart.DateTime = System.DateTime.Now.AddMonths(-1).Date;
                 YearTimeEditEnd.DateTime = System.DateTime.Now;
                 ASPxDropDownEditDept.Text = "全院";
-                JCorDD.Text = "多重耐药菌患者检出(督导)例次数";
+                JCorDD.Text = "多重耐药菌患者检出(督导)总例次数";
+                JCorDD2.Text = "多重耐药菌患者检出(督导)总例次数";
                 GridViewOther.Visible = false;
  
             }
@@ -56,10 +57,37 @@ namespace Project.WebUi.DCNYJREPORT
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        private void GetRate(int a,int b)
+        public void GetRate(int a, int b)
         {
+
             float r = (float)b / (float)a * 100;
-            per_txt.Text = Convert.ToString(r.ToString("#0.00")).Trim()+"%";
+            per_txt.Text = Convert.ToString(r.ToString("F2")).Trim() + "%";
+
+        }
+        /// <summary>
+        /// 前台获取比率
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public string GetRateFront(string a, string b)
+        {
+            string x = string.Empty;
+            double r = Convert.ToDouble(b) / Convert.ToDouble(a) * 100;
+            per_txt.Text = Convert.ToString(r.ToString()).Trim() + "%";
+            x = Convert.ToString(r.ToString("F2")).Trim() + "%";
+            return x;
+        }
+        /// <summary>
+        /// 日期格式化显示
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <returns></returns>
+        public String FormatDate(string date)
+        {
+
+            String formatDate = Convert.ToDateTime(date).ToString("yyyy年MM月dd日 HH:mm:ss");
+            return formatDate;
         }
 
         protected void ASPxTreeViewDept_VirtualModeCreateChildren(object source, TreeViewVirtualModeCreateChildrenEventArgs e)
@@ -138,13 +166,16 @@ namespace Project.WebUi.DCNYJREPORT
                     }
                 }
             }
-            if (checkDept == "2" || checkDept == "333" || checkDept == "233")
+            if (checkDept == "472" || checkDept == "473" || checkDept == "497")
             {
-                JCorDD.Text = "多重耐药菌患者督导例次数";
+                JCorDD.Text = "多重耐药菌患者督导总例次数";
+                JCorDD2.Text = "多重耐药菌患者督导总例次数";
+                
             }
             else
             {
-                JCorDD.Text = "多重耐药菌患者检出例次数";
+                 JCorDD.Text = "多重耐药菌患者检出总例次数";
+                 JCorDD2.Text = "多重耐药菌患者督导总例次数";
             }
 
             //每个textbox获取数据库里相应字段的数值
@@ -156,11 +187,15 @@ namespace Project.WebUi.DCNYJREPORT
             if (totalMonth < 0)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('结束时间不得小于开始时间！'); </script>");
+                rptList.DataSource = string.Empty;
+                rptList.DataBind();
                 return;
             }
             else if (totalMonth > 0)
             {
                 GridViewOther.DataBind();
+                rptList.DataSource = bll.QueryInfoForAllDisplay(startDate, endDate, checkDept, areaID);
+                DataBind();
                 DCNYJ model = bll.GetReportInfo(startDate, endDate, checkDept, areaID);
                 if (model != null)
                 {
@@ -176,7 +211,8 @@ namespace Project.WebUi.DCNYJREPORT
                     fhcs_txt.Text = model.Fhcs.ToString();
                     bzx_txt.Text = model.Bzx.ToString();
                     other_txt.Text = "请查看下方表格";
-                    GetRate(model.Hzzjcls,model.Yxzxls);
+                    GetRate(model.Hzzjcls, model.Yxzxls);
+                    
                 }
                 else
                 {
@@ -188,50 +224,62 @@ namespace Project.WebUi.DCNYJREPORT
                     sws_txt.Text = "";
                     wjcz_txt.Text = "";
                     tzq_txt.Text = "";
-                    xdbdw_txt.Text ="";
+                    xdbdw_txt.Text = "";
                     ylfw_txt.Text = "";
                     fhcs_txt.Text = "";
                     bzx_txt.Text = "";
                     other_txt.Text = "";
                     per_txt.Text = "";
                     GridViewOther.Visible = false;
+                    rptList.DataSource = string.Empty;
+                    rptList.DataBind();
                     return;
                 }
                 
             }
             else if (totalMonth == 0)
             {
-                
+                rptList.DataSource = bll.QueryInfoForAllDisplay(startDate, endDate, checkDept, areaID);
+                DataBind();
                 DCNYJ model = bll.GetReportInfo(startDate, endDate, checkDept, areaID);
-                hzjcls_txt.Text = model.Hzzjcls.ToString();
-                yxzxls_txt.Text = model.Yxzxls.ToString();
-                wgl_txt.Text = model.Wgl.ToString();
-                xdj_txt.Text = model.Xdj.ToString();
-                sws_txt.Text = model.Sws.ToString();
-                wjcz_txt.Text = model.Wjcz.ToString();
-                tzq_txt.Text = model.Tzq.ToString();
-                xdbdw_txt.Text = model.Xdbdw.ToString();
-                ylfw_txt.Text = model.Ylfw.ToString();
-                fhcs_txt.Text = model.Fhcs.ToString();
-                bzx_txt.Text = model.Bzx.ToString();
-                GetRate(model.Hzzjcls, model.Yxzxls);
-                if (startDate == endDate&&!String.IsNullOrEmpty(areaID))
+                if (model != null)
                 {
-                    other_txt.Text = "请看下方表格";
-                    GridViewOther.DataBind();
-                }
-                else if (startDate == endDate && !String.IsNullOrEmpty(checkDept))
-                {
-                    other_txt.Text = model.Other.ToString();
-                    GridViewOther.Visible = false;
-                }
-                else if (startDate == endDate && String.IsNullOrEmpty(areaID) && String.IsNullOrEmpty(checkDept))
-                {
-                    other_txt.Text = "请看下方表格";
-                    GridViewOther.DataBind();
+                    hzjcls_txt.Text = model.Hzzjcls.ToString();
+                    yxzxls_txt.Text = model.Yxzxls.ToString();
+                    wgl_txt.Text = model.Wgl.ToString();
+                    xdj_txt.Text = model.Xdj.ToString();
+                    sws_txt.Text = model.Sws.ToString();
+                    wjcz_txt.Text = model.Wjcz.ToString();
+                    tzq_txt.Text = model.Tzq.ToString();
+                    xdbdw_txt.Text = model.Xdbdw.ToString();
+                    ylfw_txt.Text = model.Ylfw.ToString();
+                    fhcs_txt.Text = model.Fhcs.ToString();
+                    bzx_txt.Text = model.Bzx.ToString();
+                    GetRate(model.Hzzjcls, model.Yxzxls);
+                    if (startDate == endDate && !String.IsNullOrEmpty(areaID))
+                    {
+                        other_txt.Text = "请看下方表格";
+                        GridViewOther.DataBind();
+                    }
+                    else if (startDate == endDate && !String.IsNullOrEmpty(checkDept))
+                    {
+                        other_txt.Text = model.Other.ToString();
+                        GridViewOther.Visible = false;
+                    }
+                    else if (startDate == endDate && String.IsNullOrEmpty(areaID) && String.IsNullOrEmpty(checkDept))
+                    {
+                        other_txt.Text = "请看下方表格";
+                        GridViewOther.DataBind();
+                    }
                 }
             }
-
+            else
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('没有数据！'); </script>");
+                rptList.DataSource = string.Empty;
+                rptList.DataBind();
+                return;
+            }
         }
 
 

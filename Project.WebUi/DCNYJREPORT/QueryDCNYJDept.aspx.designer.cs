@@ -109,7 +109,7 @@ namespace Project.WebUi.DCNYJREPORT {
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hzjcls_txt;
+        protected global::System.Web.UI.WebControls.TextBox hzjcls_txt;
         
         /// <summary>
         /// yxzxls_txt 控件。
@@ -118,7 +118,7 @@ namespace Project.WebUi.DCNYJREPORT {
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label yxzxls_txt;
+        protected global::System.Web.UI.WebControls.TextBox yxzxls_txt;
         
         /// <summary>
         /// per_txt 控件。

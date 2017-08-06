@@ -8,10 +8,17 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>多重耐药菌医院感染核心防控措施执行率统计查询</title>
+        <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/lhgdialog.min.js?skin=discuz"" type="text/javascript"></script>
     <link id="cssfile" href="../css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
-       
-        var flag=false; 
+        function OpenDetails(url) {
+            $.dialog({
+                lock: true, skin: "discuz", title: '', width: '960px',
+                height: '700px', content: 'url:' + url, max: false, mix: false
+            });
+        }
+        var flag=true; 
         function displayDiv() 
         { 
             var div=document.getElementById("2"); 
@@ -72,12 +79,37 @@
                 </table>
             </div>
         <%--<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>--%>
-         <table id="tfhover" style="width:850px;margin-top:30px"" class="msgtable">
+        <table id="tfhover" style="width:950px;margin-top:30px"" class="msgtable">
+           <tr align="left">
+                        <th style="text-align:center">编码ID</th>
+                        <th style="text-align:center">科室名称</th>
+                         <th style="text-align:center">上报时间</th>
+                        <th style="text-align:center"><asp:Label ID="JCorDD2" runat="server" Text="Label"></asp:Label></th>
+                        <th style="text-align:center">多重耐药菌医院感染核心防控措施的总例次数</th>
+			            <th style="text-align:center">总比率</th>
+                         <th style="text-align:center">执行不到位原因总数</th>
+                        </tr>
+            <asp:Repeater ID="rptList" runat="server">
+            <ItemTemplate>
+              <tr  align="center">
+               <td><%#Eval("id")%></td>
+                <td><%#Eval("DeptName")%></td>
+                  <td><%#FormatDate(Eval("report_date").ToString())%></td>
+                <td><%#Eval("hzjcls")%></td>
+                <td><%#Eval("yxzxls")%></td>
+                  <td style="width:54px"><%#GetRateFront(Eval("yxzxls").ToString(), Eval("hzjcls").ToString())%></td>
+                <td><a id="a1" class="button blue small" runat="server" href="#" onclick='<%# "OpenDetails(\"DCNYJREPORT/DetailsPage.aspx?id=" + Eval("id") + "\")"%>'>查看详情</a></td>  
+              </tr>
+            </ItemTemplate>
+        </asp:Repeater>
+            </table>
+
+         <table id="tfhover" style="width:950px;margin-top:30px"" class="msgtable">
 <tr align="left">
                         <td style="text-align:center"><asp:Label ID="JCorDD" runat="server" Text="Label"></asp:Label></td>
-                        <td style="text-align:center">多重耐药菌医院感染核心防控措施的例次数</td>
-			            <td style="text-align:center">比率</td>
-                         <td style="text-align:center">执行不到位原因</td>
+                        <td style="text-align:center">多重耐药菌医院感染核心防控措施的总例次数</td>
+			            <td style="text-align:center">总比率</td>
+                         <td style="text-align:center">执行不到位原因总数</td>
                         </tr>
                         <tr align="left">
                         <td style="text-align:center"><asp:Label ID="hzjcls_txt" runat="server" BorderStyle="None" Width="92px" MaxLength="6" Font-Size="15px"></asp:Label></td>
@@ -87,11 +119,11 @@
                             
                         </tr>
 </table>
-        <div id="2" style="display:none;border:none;width:850px" class="bottom" >
+        <div id="2" style="display:none;border:none;width:950px" class="bottom" >
            
-                <table id="tfhover" style="border:none;width:850px" class="msgtable" >
+                <table id="tfhover" style="border:none;width:950px" class="msgtable" >
                   
-                    <tr align="left"><td style="font-size:15px;font-weight:bold;border:none">核心防控措施执行不到位原因：</td></tr>
+                    <tr align="left"><td style="font-size:15px;font-weight:bold;border:none;background-color:#ffffff">核心防控措施执行不到位原因：</td></tr>
                         <tr align="center">
                             <th style="width: 100%">不合格项目</th>
                             <th>例次数</th>

@@ -62,7 +62,7 @@ namespace Project.WebUi.DCNYJREPORT
                 n = bll.CheckExist(model, null);
                 if (n > 0)
                 {
-                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('本月已填报,请勿重复填报！');</script>");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('本月已填报！');</script>");
                 }
                 else
                 {
